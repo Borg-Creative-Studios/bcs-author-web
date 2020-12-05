@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "BCS Author",
+  "version": "1.0",
+
+  "description": "An experimental browser based document editor.",
+
+  "icons": {
+    "48": "bcs-logo.PNG"
+  },
+
+  "browser_action": {
+    "default_icon": "bcs-logo.PNG",
+    "default_title": "BCS Author",
+    "default_popup": "index.html"
+  },
+  "background": {
+  "scripts": ["app.js","appDoc.js","appDoc1.js","appDoc2.js","appDoc3.js","appDoc4.js"]
+
+}
+}

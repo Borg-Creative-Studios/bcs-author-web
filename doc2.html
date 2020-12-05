@@ -1,0 +1,75 @@
+
+
+<html>
+	<head>
+		<!--JazzBlocks Divided required code-->
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
+		<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+		<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+		<!--end-->
+	  <title>Stairway|DocEd</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preload" href="DocEd.css"/>
+	  <link rel="stylesheet" href="DocEd.css"/>
+	</head>
+
+	<body style="background-color: white; margin: 3mm;">
+		 <div class="pc_l" id="heading" contenteditable="true"></div>
+		 <div class="pc_m" id="body" contenteditable="true"></div>
+		 <div style="padding-top: 5mm;" class="pc_m" id="footer" contenteditable="true"></div>
+		 <center>
+		 <div id="controlBar2" style="bottom: 0mm; left: 0mm; right: 0mm; position: fixed; margin-top: 3mm; padding: 1mm; padding-top: 4mm; background-color: #3d566e; width: 100%; overflow-y: scroll; height: 40mm; border: solid; border-color: #cecece;">
+			 <div class="dropdown">
+			  <a href="#"><button class="buttonY">Header Controls</button></a>
+			  <div class="dropdown-content">
+			    <button style="margin-top:2mm;" onclick="Hpf();" class="buttonY">Header 1</button>
+			    <button style="margin-top:1mm;" onclick="Hpn();" class="buttonY">Header 2</button>
+			    <button style="margin-top:1mm;" onclick="Hpc();" class="buttonY">Header 3</button>
+					<button style="margin-top:1mm;" onclick="Hpo();" class="buttonY">Header 4</button>
+			    <button style="margin-top:1mm;" onclick="Hph();" class="buttonY">Header 5</button>
+					<button onclick="Hleft();" class="buttonY">Left</button>
+					<button onclick="Hcenter();" class="buttonY">Center</button>
+					<button onclick="Hright();" class="buttonY">Right</button>
+			  </div>
+			 </div>
+			 <div class="dropdown">
+			  <a href="#"><button class="buttonY">Body Controls</button></a>
+			  <div class="dropdown-content">
+			    <button style="margin-top:1mm;" onclick="Bpf();" class="buttonY">Body 1</button>
+					<button style="margin-top:1mm;" onclick="Bpn();" class="buttonY">Body 2</button>
+					<button style="margin-top:1mm;" onclick="Bpc();" class="buttonY">Body 3</button>
+					<button style="margin-top:1mm;" onclick="Bpo();" class="buttonY">Body 4</button>
+					<button style="margin-top:1mm;" onclick="Bph();" class="buttonY">Body 5</button>
+					<button style="margin-top:1mm;" onclick="Bleft();" class="buttonY">Left</button>
+					<button style="margin-top:1mm;" onclick="Bcenter();" class="buttonY">Center</button>
+					<button style="margin-top:1mm;" onclick="Bright();" class="buttonY">Right</button>
+
+			  </div>
+			 </div>
+			 <div class="dropdown">
+			  <a href="#"><button class="buttonY">Footer Controls</button></a>
+			  <div class="dropdown-content">
+	<button style="margin-top:1mm;" onclick="Fpf();" class="buttonY">Footer 1</button>
+	<button style="margin-top:1mm;" onclick="Fpn();" class="buttonY">Footer 2</button>
+	<button style="margin-top:1mm;" onclick="Fpc();" class="buttonY">Footer 3</button>
+	<button style="margin-top:1mm;" onclick="Fpo();" class="buttonY">Footer 4</button>
+	<button style="margin-top:1mm;" onclick="Fph();" class="buttonY">Footer 5</button>
+	<button style="margin-top:1mm;" onclick="Fleft();" class="buttonY">Left</button>
+	<button style="margin-top:1mm;" onclick="Fcenter();" class="buttonY">Center</button>
+	<button style="margin-top:1mm;" onclick="Fright();" class="buttonY">Right</button></p>
+
+			  </div>
+			 </div>
+<!---->
+			 <p><button onclick="black();" class="buttonY">Black</button><button onclick="green();" class="buttonY_green">Green</button><button onclick="red();" class="buttonY_orange">Red</button><button onclick="blue();" class="buttonY_blue">Blue</button></p>
+			 <p><button class="buttonY" onclick="hide2();">Confirm Styles</button></p>
+		 </div>
+
+
+	 </center>
+	<script src="app.js"></script>
+</body>
+  </html>

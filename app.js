@@ -147,7 +147,9 @@ function blue(){
    document.getElementById("body").style.color = "#0099ff";
    document.getElementById("footer").style.color = "#0099ff";
 }
-
+function welcome(){
+   document.getElementById("iframe").src = "./welcome.html";
+}
 function doc1(){
    document.getElementById("iframe").src = "./doc.html";
 }

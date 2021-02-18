@@ -1,5 +1,5 @@
 document.getElementById("head").innerHTML =
-    localStorage["head"] || "Bill Bob Jones"; // default text
+    localStorage["head"] || "Bill Bob Joe"; // default text
 
 document.getElementById("solutation").innerHTML =
     localStorage["solutation"] || "Dear Mr. or Mrs,"; // default text

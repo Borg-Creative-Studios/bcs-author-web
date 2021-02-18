@@ -150,6 +150,8 @@ function blue(){
 function welcome(){
    document.getElementById("iframe").src = "./welcome.html";
 }
+
+
 function doc1(){
    document.getElementById("iframe").src = "./doc.html";
 }

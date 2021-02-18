@@ -36,6 +36,11 @@
 		<iframe id="iframe" src="./welcome.html" width="90%" height="500mm" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 		<p id="controlBar"><button class="buttonY" onclick="clear();">Clear</button><button class="buttonY" onclick="hide(); window.print(); show();">Print</button></p>
 		<script src="app.js"></script>
+		<script type="text/javascript">
+		function welcome(){
+			 document.getElementById("iframe").src = "./welcome.html";
+		}
+		</script>
 		</center>
 </body>
 <footer style="padding-top: 10mm; padding-bottom: 5mm;">

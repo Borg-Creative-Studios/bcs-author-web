@@ -6,18 +6,18 @@
 
 	<meta name="propeller" content="fea990d1a36a195634c3b4ae8c80c1e4">
 
-	<meta property="og:title" content="BCS Author">
+	<meta property="og:title" content="Author by Borg Creative Studios">
 	<meta property="og:description" content="An experimental browser based writing app">
 	<meta property="og:image" content="https://author.borgcreative.com/author-img.jpg">
 	<meta property="og:url" content="https://author.borgcreative.com/">
 
-	<meta property="twitter:title" content="BCS Author">
+	<meta property="twitter:title" content="Author by Borg Creative Studios">
 	<meta property="twitter:description" content="An experimental browser based writing app">
 	<meta property="twitter:image" content="https://author.borgcreative.com/author-img.jpg">
 	<meta property="twitter:url" content="https://author.borgcreative.com/">
 
-	<meta name="title" content="BCS Author">
-	<meta name="description" content="BCS Author is a new, browser-based writing app.">
+	<meta name="title" content="Author">
+	<meta name="description" content="Author is a new, browser-based writing app.">
 	<meta name="keywords" content="professional, small business, development, web technologies, writing, writing-tool, productivity">
 	<meta name="robots" content="index, nofollow">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -27,7 +27,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="shortcut icon" href="./bcs-logo.PNG">
+		<link rel="shortcut icon" href="./author_a_bright.png">
 		<!--JazzBlocks Divided required code-->
 		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
 		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
@@ -57,7 +57,7 @@
 <header>
 	<nav id="controlBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html"><img src="./bcs-logo.PNG" width="50mm"></a>
+    <a class="navbar-brand" href="./index.html"><img src="./author_a_bright.png" width="50mm"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,8 +67,21 @@
           <a class="nav-link" onclick="welcome();" aria-current="page">Welcome</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="doc1();">Template 1</a>
+          <a class="nav-link" onclick="doc1();">Editor</a>
         </li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://addons.mozilla.org/en-US/firefox/addon/bcs-author/" target="_blank">Install</a>
+		  </li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://support.borgcreative.com/" target="_blank">Support</a>
+		  </li>
+		<li class="nav-item">
+			<a class="nav-link" onclick="privacy();">Privacy</a>
+		  </li>
+
+
+		  
+		<!--
 				<li class="nav-item">
 					<a class="nav-link" onclick="doc2();">Template 2</a>
 				</li>
@@ -84,7 +97,7 @@
 				<li class="nav-item">
 					<a class="nav-link"  onclick="doc6();">Template 6</a>
 				</li>
-
+			-->
 
 
       </ul>
@@ -99,7 +112,7 @@
 		<center>
 			<!--<p id="controlBar"><button onclick="welcome();" class="buttonY">Welcome</button><button onclick="doc1();" class="buttonY">Template 1</button><button onclick="doc2();" class="buttonY">Template 2</button><button onclick="doc3();" class="buttonY">Template 3</button><button onclick="doc4();" class="buttonY">Template 4</button><button onclick="doc5();" class="buttonY">Template 5</button><button onclick="doc6();" class="buttonY">Template 6</button></p>-->
 		<iframe class="card" id="iframe" src="./welcome.html" width="90%" height="500mm" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		<p id="controlBar"><button class="buttonY" onclick="clear();">Clear</button><button class="buttonY" onclick="hide(); window.print(); show();">Print</button></p>
+		<p id="controlBar"><!--<button class="buttonY" onclick="clear();">Clear</button>--><button class="buttonY" onclick="hide(); window.print(); show();">Print</button></p>
 		<script src="app.js"></script>
 		<script type="text/javascript">
 		function welcome(){
@@ -114,13 +127,13 @@
 
   <center id="footerHide">
 
-<a href="./index.html" target="_blank" id="fa"><button class="buttonY">New tab</button></a><a style="padding-left: 5mm;" href="./privacy.html" target="_blank" id="fa"><button class="buttonY">Privacy</button></a><a style="padding-left: 5mm;" href="https://support.borgcreative.com/" target="_blank" id="fa"><button class="buttonY">Support</button></a><a style="padding-left: 5mm;" href="https://addons.mozilla.org/en-US/firefox/addon/bcs-author/" target="_blank" id="fa"><button class="buttonY">Install</button></a>
+<!--<a href="./index.html" target="_blank" id="fa"><button class="buttonY">New tab</button></a><a style="padding-left: 5mm;" href="./privacy.html" target="_blank" id="fa"><button class="buttonY">Privacy</button></a><a style="padding-left: 5mm;" href="https://support.borgcreative.com/" target="_blank" id="fa"><button class="buttonY">Support</button></a><a style="padding-left: 5mm;" href="https://addons.mozilla.org/en-US/firefox/addon/bcs-author/" target="_blank" id="fa"><button class="buttonY">Install</button></a>-->
 <p style="padding: 5px"></p>
 
 <p><a href="https://www.borgcreative.com">
 <img width="100px" src="https://www.borgcreative.com/assets/img/borg.png" alt="">
 </a></p>
-<p>Borg Creative Studios, LLC</p>
+<p>Borg Creative Studios</p>
 </center>
 </footer>
   </html>

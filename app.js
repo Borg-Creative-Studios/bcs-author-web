@@ -7,9 +7,9 @@ document.getElementById("body").innerHTML =
 
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
-  localStorage["title"] = document.getElementById("heading").innerHTML; // heading div
-  localStorage["text"] = document.getElementById("body").innerHTML; // content div
-  localStorage["footer"] = document.getElementById("footer").innerHTML; // content div
+  localStorage["title"] = document.getElementById("heading").innerHTML + ' '; // heading div
+  localStorage["text"] = document.getElementById("body").innerHTML + ' '; // content div
+  localStorage["footer"] = document.getElementById("footer").innerHTML + ' '; // content div
 }, 1000);
 function clear(){
   localStorage.clear();
@@ -170,4 +170,14 @@ function doc6(){
 }
 function doc7(){
    document.getElementById("iframe").src = "./doc7.html";
+}
+
+function privacy(){
+   document.getElementById("iframe").src = "./privacy.html";
+}
+
+function save() {
+   var blob = new Blob([localStorage["title"], localStorage["text"], localStorage["footer"]],
+    { type: "text/plain;charset=utf-8" });
+   saveAs(blob, "author.txt");
 }

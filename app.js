@@ -5,23 +5,12 @@ document.getElementById("body").innerHTML =
   document.getElementById("footer").innerHTML =
     localStorage["footer"] || "The footer"; // default text
 
-
-document.getElementById("hcustomcolor").innerHTML =
-   localStorage["hcolor"] || "#000"; // default text
-document.getElementById("bcustomcolor").innerHTML =
-   localStorage["bcolor"] || "#000"; // default text
-document.getElementById("fcustomcolor").innerHTML =
-   localStorage["fcolor"] || "#000"; // default text
-  
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
   localStorage["title"] = document.getElementById("heading").innerHTML + ' '; // heading div
   localStorage["text"] = document.getElementById("body").innerHTML + ' '; // content div
   localStorage["footer"] = document.getElementById("footer").innerHTML + ' '; // content div
 
-  localStorage["hcolor"] = document.getElementById("hcustomcolor").innerHTML + ' '; // custom color
-  localStorage["bcolor"] = document.getElementById("bcustomcolor").innerHTML + ' '; // custom color
-  localStorage["fcolor"] = document.getElementById("fcustomcolor").innerHTML + ' '; // custom color
 }, 1000);
 function clear(){
   localStorage.clear();
@@ -293,7 +282,6 @@ function save() {
 function print(){
    if (window.location.href == 'https://author.borgcreative.com/docprint.html') {
       window.print();
-      window.close();
    
    } else {
       window.close();

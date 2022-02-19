@@ -219,9 +219,11 @@
 	<script id="script" src="app.js"></script>
 	<script>
 			function widthcontrold(){
-		if (window.innerWidth <= 500) {
-			document.getElementById("savebtn").innerHTML = '';
-		}
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					document.getElementById("savebtn").innerHTML = '';
+}
+
+
 	}
 
 	</script>

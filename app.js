@@ -289,3 +289,14 @@ function save() {
     { type: "text/plain;charset=utf-8" });
    saveAs(blob, "author.txt");
 }
+
+function print()
+   if (window.location.href == 'https://author.borgcreative.com/doc.html?utm_term=print') {
+      document.getElementById("ab").style.visibility = 'hidden';   
+      document.getElementById("controlbar2").style.visibility = 'hidden';
+      window.print();
+      window.close();
+   
+   } else {
+      
+   }

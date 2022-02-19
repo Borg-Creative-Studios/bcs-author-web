@@ -35,6 +35,7 @@ if (x.style.display === "none") {
 }
 }
 function hide2(){
+   document.getElementById("ab").style.visibility = 'visible';
 var x = document.getElementById("controlBar2");
 if (x.style.display === "none") {
   x.style.display = "block";
@@ -42,7 +43,10 @@ if (x.style.display === "none") {
   x.style.display = "none";
 }
 }
+
+
 function show2(){
+   document.getElementById("ab").style.visibility = 'hidden';
 var x = document.getElementById("controlBar2");
 if (x.style.display === "none") {
   x.style.display = "block";
@@ -147,6 +151,79 @@ function blue(){
    document.getElementById("body").style.color = "#0099ff";
    document.getElementById("footer").style.color = "#0099ff";
 }
+
+
+
+function hblack(){
+   document.getElementById("heading").style.color = "black";
+
+
+}
+function hgreen(){
+   document.getElementById("heading").style.color = "green";
+
+
+}
+function hred(){
+   document.getElementById("heading").style.color = "red";
+
+
+}
+function hblue(){
+   document.getElementById("heading").style.color = "#0099ff";
+
+
+}
+
+
+function bblack(){
+
+   document.getElementById("body").style.color = "black";
+
+}
+function bgreen(){
+
+   document.getElementById("body").style.color = "green";
+
+}
+function bred(){
+
+   document.getElementById("body").style.color = "red";
+
+}
+function bblue(){
+
+   document.getElementById("body").style.color = "#0099ff";
+
+}
+
+
+
+function fblack(){
+
+
+   document.getElementById("footer").style.color = "black";
+}
+function fgreen(){
+
+
+   document.getElementById("footer").style.color = "green";
+}
+function fred(){
+
+
+   document.getElementById("footer").style.color = "red";
+}
+function fblue(){
+
+
+   document.getElementById("footer").style.color = "#0099ff";
+}
+
+
+
+
+
 function welcome(){
    document.getElementById("iframe").src = "./welcome.html";
 }

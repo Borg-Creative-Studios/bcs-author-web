@@ -1,0 +1,222 @@
+
+
+<html>
+	<head>
+
+
+
+		<!--JazzBlocks Divided required code-->
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
+		<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+		<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+		<!--end-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	  <title>Author</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preload" href="DocEd.css"/>
+	  <link rel="stylesheet" href="DocEd.css"/>
+	</head>
+
+	<body style="background-color: white; margin: 3mm;">
+		<div id="document" style="visibility: hidden; position: fixed; top: 0px; width: 100%; height: 3in; overflow-y: scroll;">
+		 <div class="pn_l" id="heading" contenteditable="true"></div>
+		 <div class="pn_m" id="body" contenteditable="true"></div>
+		 <div style="padding-top: 5mm;" class="pn_m" id="footer" contenteditable="true"></div>
+		</div>
+		 
+		 <div id="controlBar2" style="bottom: 0mm; left: 0mm; right: 0mm; position: fixed; margin-top: 3mm; padding: 0px; padding-top: 0px; width: 100%; overflow-y: scroll; height: auto; border: none; border-color: #cecece;">
+			
+
+
+<!---->
+			 <!--
+<a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="Free Website Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script>
+-->
+
+<div class="accordion accordion-flush" id="accordionExample">
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headingOne">
+		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		  Header Styles
+		</button>
+	  </h2>
+	  <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+		<div class="accordion-body">
+		  <!--Accordian Content-->
+		  <p style="margin-top:2px;">
+			<button style="margin-top:1mm;" onclick="Hpf();" class="btn btn-outline-dark">Header 1</button>
+		  <button style="margin-top:1mm;" onclick="Hpn();" class="btn btn-outline-dark">Header 2</button>
+		  <button style="margin-top:1mm;" onclick="Hpc();" class="btn btn-outline-dark">Header 3</button>
+			<button style="margin-top:1mm;" onclick="Hpo();" class="btn btn-outline-dark">Header 4</button>
+		  <button style="margin-top:1mm;" onclick="Hph();" class="btn btn-outline-dark">Header 5</button>
+		  </p>
+			  <p style="margin-top:2px;">
+				<button onclick="Hleft();" class="btn btn-outline-dark">Left</button>
+			  <button onclick="Hcenter();" class="btn btn-outline-dark">Center</button>
+			  <button onclick="Hright();" class="btn btn-outline-dark">Right</button>
+			</p>
+			<p style="margin-top:2px;">
+				<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#headingcolor" aria-expanded="false" aria-controls="collapseExample">
+					Color
+				  </button>
+				  <div class="collapse" id="headingcolor">
+					<div class="card card-body">
+					  <p>
+						<button onclick="hblack();" class="btn btn-outline-dark">Black</button>
+						<button onclick="hgreen();" class="btn btn-outline-success">Green</button>
+						<button onclick="hred();" class="btn btn-outline-danger">Red</button>
+						<button onclick="hblue();" class="btn btn-outline-primary">Blue</button>
+					  </p>
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+					</div>
+				  </div></p>
+			
+				
+
+
+		</div>
+	  </div>
+	</div>
+
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwo">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+			Body Styles
+		  </button>
+		</h2>
+		<div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<!--Accordian Content-->
+			<p style="margin-top:2px;">
+			    <button style="margin-top:1mm;" onclick="Bpf();" class="btn btn-outline-dark">Body 1</button>
+					<button style="margin-top:1mm;" onclick="Bpn();" class="btn btn-outline-dark">Body 2</button>
+					<button style="margin-top:1mm;" onclick="Bpc();" class="btn btn-outline-dark">Body 3</button>
+					<button style="margin-top:1mm;" onclick="Bpo();" class="btn btn-outline-dark">Body 4</button>
+					<button style="margin-top:1mm;" onclick="Bph();" class="btn btn-outline-dark">Body 5</button>
+			</p>
+				<p style="margin-top:2px;">
+					<button style="margin-top:1mm;" onclick="Bleft();" class="btn btn-outline-dark">Left</button>
+					<button style="margin-top:1mm;" onclick="Bcenter();" class="btn btn-outline-dark">Center</button>
+					<button style="margin-top:1mm;" onclick="Bright();" class="btn btn-outline-dark">Right</button>
+			  </p>
+			  <p style="margin-top:2px;">
+				<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#bodycolor" aria-expanded="false" aria-controls="collapseExample">
+					Color
+				  </button>
+				  <div class="collapse" id="bodycolor">
+					<div class="card card-body">
+					  <p>
+						<button onclick="bblack();" class="btn btn-outline-dark">Black</button>
+						<button onclick="bgreen();" class="btn btn-outline-success">Green</button>
+						<button onclick="bred();" class="btn btn-outline-danger">Red</button>
+						<button onclick="bblue();" class="btn btn-outline-primary">Blue</button>
+					  </p>
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="bcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="bcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+					</div>
+				  </div></p>
+
+		
+			  
+  
+		  </div>
+		</div>
+	  </div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingThree">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+			Footer Styles
+		  </button>
+		</h2>
+		<div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<!--Accordian Content-->
+			<p style="margin-top:2px;">
+				<button style="margin-top:1mm;" onclick="Fpf();" class="btn btn-outline-dark">Footer 1</button>
+				<button style="margin-top:1mm;" onclick="Fpn();" class="btn btn-outline-dark">Footer 2</button>
+				<button style="margin-top:1mm;" onclick="Fpc();" class="btn btn-outline-dark">Footer 3</button>
+				<button style="margin-top:1mm;" onclick="Fpo();" class="btn btn-outline-dark">Footer 4</button>
+				<button style="margin-top:1mm;" onclick="Fph();" class="btn btn-outline-dark">Footer 5</button>
+			</p>
+				<p style="margin-top:2px;">
+					<button style="margin-top:1mm;" onclick="Fleft();" class="btn btn-outline-dark">Left</button>
+					<button style="margin-top:1mm;" onclick="Fcenter();" class="btn btn-outline-dark">Center</button>
+					<button style="margin-top:1mm;" onclick="Fright();" class="btn btn-outline-dark">Right</button>
+			  </p>
+
+			  <p style="margin-top:2px;">
+				<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#footercolor" aria-expanded="false" aria-controls="collapseExample">
+					Color
+				  </button>
+				  <div class="collapse" id="footercolor">
+					<div class="card card-body">
+					  <p>
+						<button onclick="fblack();" class="btn btn-outline-dark">Black</button>
+						<button onclick="fgreen();" class="btn btn-outline-success">Green</button>
+						<button onclick="fred();" class="btn btn-outline-danger">Red</button>
+						<button onclick="fblue();" class="btn btn-outline-primary">Blue</button>
+					  </p>
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="fcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="fcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+					</div>
+				  </div></p>  
+		  </div>
+		</div>
+	  </div>
+
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingFour">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+			File
+		  </button>
+		</h2>
+		<div id="collapseFour" class="accordion-collapse collapse hide" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<!--Accordian Content-->
+			<p style="margin-top:2px;">
+				<script src="js/FileSaver.js"></script>
+				<div>
+					<p>
+					<button class="btn btn-outline-dark" onclick="hrecallcolor();brecallcolor();frecallcolor();colorinspect();">Color Inspector</button>
+					<button class="btn btn-outline-dark" onclick="hide2(); expand();">Hide Control Bar</button>
+					<button class="btn btn-outline-dark" onclick="save();">Save (Beta)</button>
+						</p>
+				<p id="inspectortitle"></p>		
+				<p id="inspector1"></p>
+				<p id="inspector2"></p>
+				<p id="inspector3"></p>
+				<p id="inspectorcontrols"></p>
+				</div>
+				
+			</p>
+
+			  
+  
+		  </div>
+		</div>
+	  </div>
+
+
+
+	</div>
+
+
+		 </div>
+
+	 
+	<script id="script" src="app.js"></script>
+	<a id="ab" onclick="show2(); shrink();" style="visibility: hidden;"><img src="./author_a.png" style="width: 40px; position: fixed; right: 10px; bottom: 10px;"></a>
+</body>
+  </html>

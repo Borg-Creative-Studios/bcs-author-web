@@ -27,7 +27,7 @@
 		 <div class="pn_m" id="body" contenteditable="true"></div>
 		 <div style="padding-top: 5mm;" class="pn_m" id="footer" contenteditable="true"></div>
 		</div>
-		 
+		 <center>
 		 <div id="controlBar2" style="bottom: 0mm; left: 0mm; right: 0mm; position: fixed; margin-top: 3mm; padding: 0px; padding-top: 0px; width: 100%; overflow-y: scroll; height: auto; border: none; border-color: #cecece;">
 
 
@@ -60,25 +60,16 @@
 			  <button onclick="Hright();" class="btn btn-outline-dark">Right</button>
 			</p>
 			<p style="margin-top:2px;">
-				<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#headingcolor" aria-expanded="false" aria-controls="collapseExample">
-					Color
-				  </button>
-				  <div class="collapse" id="headingcolor">
-					<div class="card card-body">
-					  <p>
-						<button onclick="hblack();" class="btn btn-outline-dark">Black</button>
-						<button onclick="hgreen();" class="btn btn-outline-success">Green</button>
-						<button onclick="hred();" class="btn btn-outline-danger">Red</button>
-						<button onclick="hblue();" class="btn btn-outline-primary">Blue</button>
-					  </p>
-					  <p style="margin-top:2px;">	
-						<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
-					</p>
-					</div>
-				  </div></p>
+				<button onclick="hblack();" class="btn btn-outline-dark">Black</button>
+				<button onclick="hgreen();" class="btn btn-outline-success">Green</button>
+				<button onclick="hred();" class="btn btn-outline-danger">Red</button>
+				<button onclick="hblue();" class="btn btn-outline-primary">Blue</button>
+			</p>
 			
 				
-
+				<p style="margin-top:2px;">	
+				<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+			</p>
 
 		</div>
 	  </div>
@@ -106,23 +97,16 @@
 					<button style="margin-top:1mm;" onclick="Bright();" class="btn btn-outline-dark">Right</button>
 			  </p>
 			  <p style="margin-top:2px;">
-				<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#bodycolor" aria-expanded="false" aria-controls="collapseExample">
-					Color
-				  </button>
-				  <div class="collapse" id="bodycolor">
-					<div class="card card-body">
-					  <p>
-						<button onclick="bblack();" class="btn btn-outline-dark">Black</button>
-						<button onclick="bgreen();" class="btn btn-outline-success">Green</button>
-						<button onclick="bred();" class="btn btn-outline-danger">Red</button>
-						<button onclick="bblue();" class="btn btn-outline-primary">Blue</button>
-					  </p>
-					  <p style="margin-top:2px;">	
-						<input type="text" class="form-control-sm" id="bcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="bcustomcolor();" class="btn btn-outline-dark">Set Color</button>
-					</p>
-					</div>
-				  </div></p>
-
+				<button onclick="bblack();" class="btn btn-outline-dark">Black</button>
+				<button onclick="bgreen();" class="btn btn-outline-success">Green</button>
+				<button onclick="bred();" class="btn btn-outline-danger">Red</button>
+				<button onclick="bblue();" class="btn btn-outline-primary">Blue</button>
+			</p>
+			
+				
+				<p style="margin-top:2px;">	
+				<input type="text" class="form-control-sm" id="bcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="bcustomcolor()" class="btn btn-outline-dark">Set Color</button>
+			</p>
 		
 			  
   
@@ -152,24 +136,20 @@
 					<button style="margin-top:1mm;" onclick="Fcenter();" class="btn btn-outline-dark">Center</button>
 					<button style="margin-top:1mm;" onclick="Fright();" class="btn btn-outline-dark">Right</button>
 			  </p>
-
 			  <p style="margin-top:2px;">
-				<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#footercolor" aria-expanded="false" aria-controls="collapseExample">
-					Color
-				  </button>
-				  <div class="collapse" id="footercolor">
-					<div class="card card-body">
-					  <p>
-						<button onclick="fblack();" class="btn btn-outline-dark">Black</button>
-						<button onclick="fgreen();" class="btn btn-outline-success">Green</button>
-						<button onclick="fred();" class="btn btn-outline-danger">Red</button>
-						<button onclick="fblue();" class="btn btn-outline-primary">Blue</button>
-					  </p>
-					  <p style="margin-top:2px;">	
-						<input type="text" class="form-control-sm" id="fcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="fcustomcolor();" class="btn btn-outline-dark">Set Color</button>
-					</p>
-					</div>
-				  </div></p>  
+				<button onclick="fblack();" class="btn btn-outline-dark">Black</button>
+				<button onclick="fgreen();" class="btn btn-outline-success">Green</button>
+				<button onclick="fred();" class="btn btn-outline-danger">Red</button>
+				<button onclick="fblue();" class="btn btn-outline-primary">Blue</button>
+			  </p>
+			
+				<p style="margin-top:2px;">	
+				<input type="text" class="form-control-sm" id="fcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="fcustomcolor()" class="btn btn-outline-dark">Set Color</button>
+			</p>
+
+		
+			  
+  
 		  </div>
 		</div>
 	  </div>
@@ -215,7 +195,7 @@
 
 		 </div>
 
-	 
+	 </center>
 	<script id="script" src="app.js"></script>
 	<a id="ab" onclick="show2(); shrink();" style="visibility: hidden;"><img src="./author_a.png" style="width: 40px; position: fixed; right: 10px; bottom: 10px;"></a>
 </body>

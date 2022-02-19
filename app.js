@@ -312,6 +312,9 @@ function closeinspector(){
 function welcome(){
    document.getElementById("iframe").src = "./welcome.html";
 }
+function meme(){
+   document.getElementById("iframe").src = "./meme.html";
+}
 function doc1(){
    document.getElementById("iframe").src = "./doc.html";
 }

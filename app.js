@@ -278,13 +278,3 @@ function save() {
     { type: "text/plain;charset=utf-8" });
    saveAs(blob, "author.txt");
 }
-
-function print(){
-   if (window.location.href == 'https://author.borgcreative.com/docprint.html?utm_term=print') {
-      window.print();
-   
-   } else {
-      window.close();
-   }
-      
-   }

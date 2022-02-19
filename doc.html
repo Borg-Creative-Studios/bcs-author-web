@@ -21,7 +21,7 @@
 	  <link rel="stylesheet" href="DocEd.css"/>
 	</head>
 
-	<body style="background-color: white; margin: 3mm;">
+	<body onload="widthcontrold();" style="background-color: white; margin: 3mm;">
 		<div id="document" style="position: fixed; top: 0px; width: 100%; height: 3in; overflow-y: scroll;">
 		 <div class="pn_l" id="heading" contenteditable="true"></div>
 		 <div class="pn_m" id="body" contenteditable="true"></div>
@@ -191,7 +191,7 @@
 					<p>
 					<button class="btn btn-outline-dark" onclick="hrecallcolor();brecallcolor();frecallcolor();colorinspect();">Color Inspector</button>
 					<button class="btn btn-outline-dark" onclick="hide2(); expand();">Hide Control Bar</button>
-					<button class="btn btn-outline-dark" onclick="save();">Save (Beta)</button>
+					<span id="savebtn"><button class="btn btn-outline-dark" onclick="save();">Save (Beta)</button></span>
 						</p>
 				<p id="inspectortitle"></p>		
 				<p id="inspector1"></p>
@@ -217,6 +217,14 @@
 
 	 
 	<script id="script" src="app.js"></script>
+	<script>
+			function widthcontrold(){
+		if (window.innerWidth <= 500) {
+			document.getElementById("savebtn").innerHTML = '';
+		}
+	}
+
+	</script>
 	<a id="ab" onclick="show2(); shrink();" style="visibility: hidden;"><img src="./author_a.png" style="width: 40px; position: fixed; right: 10px; bottom: 10px;"></a>
 </body>
   </html>

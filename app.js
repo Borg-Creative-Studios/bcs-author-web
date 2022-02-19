@@ -292,8 +292,6 @@ function save() {
 
 function print(){
    if (window.location.href == 'https://author.borgcreative.com/docprint.html?utm_term=print') {
-      document.getElementById("ab").style.visibility = 'hidden';   
-      document.getElementById("controlbar2").style.visibility = 'hidden';
       window.print();
       window.close();
    

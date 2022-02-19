@@ -137,13 +137,50 @@
 
 <!--<a href="./index.html" target="_blank" id="fa"><button class="buttonY">New tab</button></a><a style="padding-left: 5mm;" href="./privacy.html" target="_blank" id="fa"><button class="buttonY">Privacy</button></a><a style="padding-left: 5mm;" href="https://support.borgcreative.com/" target="_blank" id="fa"><button class="buttonY">Support</button></a><a style="padding-left: 5mm;" href="https://addons.mozilla.org/en-US/firefox/addon/bcs-author/" target="_blank" id="fa"><button class="buttonY">Install</button></a>-->
 <p style="padding: 5px"></p>
-
+<div id="footname" style="visibility: visible;">
 <p><a href="https://www.borgcreative.com">
 <img width="100px" src="https://www.borgcreative.com/assets/img/borg.png" alt="">
 </a></p>
 <p>Borg Creative Studios</p>
-
+</div>
 </center>
+
+
+
+<nav id="controlBarfooter" style="visibility: hidden;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="./index.html"><img src="./author_a_bright.png" width="50mm"></a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li id="menu2" style="visibility: visible;" class="nav-item">
+			<a class="nav-link" onclick="doc1();">Editor</a>
+		  </li>
+		  <!--<li class="nav-item">
+			  <a onclick="window.open('./controlwindow.html', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" class="nav-link">Colors</a>
+			</li>-->
+  
+  
+		  <li id="menu3" style="visibility: visible;" class="nav-item">
+			  <a class="nav-link" href="https://addons.mozilla.org/en-US/firefox/addon/bcs-author/" target="_blank">Install</a>
+			</li>
+		  <li id="menu4" style="visibility: visible;" class="nav-item">
+			  <a class="nav-link" href="https://support.borgcreative.com/" target="_blank">Support</a>
+			</li>
+		  <li id="menu5" style="visibility: visible;" class="nav-item">
+			  <a class="nav-link" onclick="privacy();">Privacy</a>
+			</li>
+			<li id="menu4" style="visibility: visible;" class="nav-item">
+				<a class="nav-link" href="https://www.borgcreative.com/" target="_blank">Borg Creative Studios</a>
+			  </li>
+  
+  
+		</ul>
+	  </div>
+	</div>
+  </nav>
 
 <script>
 	function editor(){
@@ -159,6 +196,8 @@
 		document.getElementById("iframe").src = "./doc.html";
 		document.getElementById("printbtn").style.visibility = 'hidden';
 		document.getElementById("controlBar").style.visibility = 'hidden';
+		document.getElementById("footname").style.visibility = 'hidden';
+		document.getElementById("controlBarfooter").style.visibility = 'visible';
 	}
 
 </script>

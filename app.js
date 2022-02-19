@@ -280,7 +280,7 @@ function save() {
 }
 
 function print(){
-   if (window.location.href == 'https://author.borgcreative.com/docprint.html') {
+   if (window.location.href == 'https://author.borgcreative.com/docprint.html?utm_term=print') {
       window.print();
    
    } else {

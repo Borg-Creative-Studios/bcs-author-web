@@ -297,6 +297,8 @@ function print(){
       window.print();
       window.close();
    
-   } else {}
+   } else {
+      window.close();
+   }
       
    }

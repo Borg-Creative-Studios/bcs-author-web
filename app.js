@@ -291,7 +291,7 @@ function save() {
 }
 
 function print(){
-   if (window.location.href == 'https://author.borgcreative.com/docprint.html?utm_term=print') {
+   if (window.location.href == 'https://author.borgcreative.com/docprint.html') {
       window.print();
       window.close();
    

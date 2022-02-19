@@ -5,11 +5,33 @@ document.getElementById("body").innerHTML =
   document.getElementById("footer").innerHTML =
     localStorage["footer"] || "The footer"; // default text
 
+document.getElementById("heading").className =
+    localStorage["titles"] || "pn_l"; // default text
+document.getElementById("body").className =
+    localStorage["texts"] || "pn_m"; // default text
+document.getElementById("footer").className =
+      localStorage["footers"] || "pn_m"; // default text
+  
+document.getElementById("heading").style.color =
+      localStorage["titlec"] || "#000"; // default text
+document.getElementById("body").style.color =
+      localStorage["textc"] || "#000"; // default text
+document.getElementById("footer").style.color =
+        localStorage["footerc"] || "#000"; // default text
+    
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
   localStorage["title"] = document.getElementById("heading").innerHTML + ' '; // heading div
   localStorage["text"] = document.getElementById("body").innerHTML + ' '; // content div
   localStorage["footer"] = document.getElementById("footer").innerHTML + ' '; // content div
+
+  localStorage["titles"] = document.getElementById("heading").className + ' '; // heading div
+  localStorage["texts"] = document.getElementById("body").className + ' '; // content div
+  localStorage["footers"] = document.getElementById("footer").className + ' '; // content div
+
+  localStorage["titlec"] = document.getElementById("heading").style.color + ' '; // heading div
+  localStorage["textc"] = document.getElementById("body").style.color + ' '; // content div
+  localStorage["footerc"] = document.getElementById("footer").style.color + ' '; // content div
 
 }, 1000);
 function clear(){
@@ -157,21 +179,25 @@ function blue(){
 
 function hblack(){
    document.getElementById("heading").style.color = "black";
+   document.getElementById("hcustomcolor").value = "black";
 
 
 }
 function hgreen(){
    document.getElementById("heading").style.color = "green";
+   document.getElementById("hcustomcolor").value = "green";
 
 
 }
 function hred(){
    document.getElementById("heading").style.color = "red";
+   document.getElementById("hcustomcolor").value = "red";
 
 
 }
 function hblue(){
    document.getElementById("heading").style.color = "#0099ff";
+   document.getElementById("hcustomcolor").value = "blue";
 
 
 }
@@ -180,21 +206,25 @@ function hblue(){
 function bblack(){
 
    document.getElementById("body").style.color = "black";
+   document.getElementById("bcustomcolor").value = "black";
 
 }
 function bgreen(){
 
    document.getElementById("body").style.color = "green";
+   document.getElementById("bcustomcolor").value = "green";
 
 }
 function bred(){
 
    document.getElementById("body").style.color = "red";
+   document.getElementById("bcustomcolor").value = "red";
 
 }
 function bblue(){
 
    document.getElementById("body").style.color = "#0099ff";
+   document.getElementById("bcustomcolor").value = "green";
 
 }
 
@@ -204,21 +234,26 @@ function fblack(){
 
 
    document.getElementById("footer").style.color = "black";
+   document.getElementById("fcustomcolor").value = "black";
+   
 }
 function fgreen(){
 
 
    document.getElementById("footer").style.color = "green";
+   document.getElementById("fcustomcolor").value = "green";
 }
 function fred(){
 
 
    document.getElementById("footer").style.color = "red";
+   document.getElementById("fcustomcolor").value = "red";
 }
 function fblue(){
 
 
    document.getElementById("footer").style.color = "#0099ff";
+   document.getElementById("fcustomcolor").value = "blue";
 }
 
 
@@ -240,7 +275,37 @@ function fcustomcolor(){
    document.getElementById("footer").style.color = document.getElementById("fcustomcolor").value;
 }
 
+function hrecallcolor(){
+   document.getElementById("hcustomcolor").value = document.getElementById("heading").style.color;
+}
+function brecallcolor(){
+   document.getElementById("bcustomcolor").value = document.getElementById("body").style.color;
+}
+function frecallcolor(){
+   document.getElementById("fcustomcolor").value = document.getElementById("footer").style.color;
+}
 
+function colorinspect(){
+   document.getElementById("inspectortitle").innerHTML = 'Color Inspector';
+   document.getElementById("inspector1").innerHTML = 'Heading: ' + document.getElementById("heading").style.color;
+   document.getElementById("inspector2").innerHTML = 'Body: ' + document.getElementById("body").style.color;
+   document.getElementById("inspector3").innerHTML = 'Footer: ' + document.getElementById("footer").style.color;
+
+   document.getElementById("inspectorcontrols").innerHTML = '<button class="btn btn-outline-dark" onclick="closeinspector();">X</button>';
+
+}
+
+
+
+function closeinspector(){
+   document.getElementById("inspectortitle").innerHTML = '';
+   document.getElementById("inspector1").innerHTML = '';
+   document.getElementById("inspector2").innerHTML = '';
+   document.getElementById("inspector3").innerHTML = '';
+
+   document.getElementById("inspectorcontrols").innerHTML = '';
+
+}
 
 
 

@@ -278,3 +278,11 @@ function save() {
     { type: "text/plain;charset=utf-8" });
    saveAs(blob, "author.txt");
 }
+
+function expand() {
+   document.getElementById("document").style.height = "500px";
+}
+
+function shrink() {
+   document.getElementById("document").style.height = "3in";
+}

@@ -22,7 +22,7 @@
 	</head>
 
 	<body style="background-color: white; margin: 3mm;">
-		<div style="position: fixed; top: 0px; width: 100%; height: 3in; overflow-y: scroll;">
+		<div id="document" style="position: fixed; top: 0px; width: 100%; height: 3in; overflow-y: scroll;">
 		 <div class="ph_l" id="heading" contenteditable="true"></div>
 		 <div class="ph_m" id="body" contenteditable="true"></div>
 		 <div style="padding-top: 5mm;" class="ph_m" id="footer" contenteditable="true"></div>
@@ -170,7 +170,7 @@
 			<p style="margin-top:2px;">
 				<script src="js/FileSaver.js"></script>
 				<p>
-					<button class="btn btn-outline-dark" onclick="hide2();">Hide Control Bar</button>
+					<button class="btn btn-outline-dark" onclick="hide2(); expand();">Hide Control Bar</button>
 					<button class="btn btn-outline-dark" onclick="save();">Save (Beta)</button>
 				</p>
 				
@@ -191,6 +191,6 @@
 
 	 </center>
 	<script id="script" src="app.js"></script>
-	<a id="ab" onclick="show2()" style="visibility: hidden;"><img src="./author_a.png" style="width: 40px; position: fixed; right: 10px; bottom: 10px;"></a>
+	<a id="ab" onclick="show2(); shrink();" style="visibility: hidden;"><img src="./author_a.png" style="width: 40px; position: fixed; right: 10px; bottom: 10px;"></a>
 </body>
   </html>

@@ -55,7 +55,7 @@
 	</head>
 
 <header>
-	<nav id="controlBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav id="controlBar" style="visibility: visible;" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html"><img src="./author_a_bright.png" width="50mm"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,8 +158,7 @@
 	if (window.location.href == 'https://author.borgcreative.com/?utm_term=cloud') {
 		document.getElementById("iframe").src = "./doc.html";
 		document.getElementById("printbtn").style.visibility = 'hidden';
-		document.getElementById("menu1").style.visibility = 'hidden';
-		document.getElementById("menu3").style.visibility = 'hidden';
+		document.getElementById("controlBar").style.visibility = 'hidden';
 	}
 
 </script>

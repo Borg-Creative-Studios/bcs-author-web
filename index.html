@@ -63,10 +63,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li id="menu1" style="visibility: visible;" class="nav-item">
           <a class="nav-link" onclick="welcome();" aria-current="page">Welcome</a>
         </li>
-        <li class="nav-item">
+        <li id="menu2" style="visibility: visible;" class="nav-item">
           <a class="nav-link" onclick="doc1();">Editor</a>
         </li>
 		<!--<li class="nav-item">
@@ -74,13 +74,13 @@
 		  </li>-->
 
 
-		<li class="nav-item">
+		<li id="menu3" style="visibility: visible;" class="nav-item">
 			<a class="nav-link" href="https://addons.mozilla.org/en-US/firefox/addon/bcs-author/" target="_blank">Install</a>
 		  </li>
-		<li class="nav-item">
+		<li id="menu4" style="visibility: visible;" class="nav-item">
 			<a class="nav-link" href="https://support.borgcreative.com/" target="_blank">Support</a>
 		  </li>
-		<li class="nav-item">
+		<li id="menu5" style="visibility: visible;" class="nav-item">
 			<a class="nav-link" onclick="privacy();">Privacy</a>
 		  </li>
 
@@ -117,7 +117,7 @@
 		<center>
 			<!--<p id="controlBar"><button onclick="welcome();" class="buttonY">Welcome</button><button onclick="doc1();" class="buttonY">Template 1</button><button onclick="doc2();" class="buttonY">Template 2</button><button onclick="doc3();" class="buttonY">Template 3</button><button onclick="doc4();" class="buttonY">Template 4</button><button onclick="doc5();" class="buttonY">Template 5</button><button onclick="doc6();" class="buttonY">Template 6</button></p>-->
 		<iframe class="card" id="iframe" src="./welcome.html" width="90%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		<p id="controlBar"><!--<button class="buttonY" onclick="clear();">Clear</button>--><a href="./docprint.html?utm_term=print" target="_blank"><button class="btn btn-outline-dark" >Print</button></a></p>
+		<p id="controlBar"><!--<button class="buttonY" onclick="clear();">Clear</button>--><a id="printbtn" style="visibility: visible;" href="./docprint.html?utm_term=print" target="_blank"><button class="btn btn-outline-dark" >Print</button></a></p>
 		<!--onclick="hide(); window.print(); show();"-->
 		
 		
@@ -152,7 +152,15 @@
 	if (window.location.href == 'https://author.borgcreative.com/?utm_term=editor') {
 		document.getElementById("iframe").src = "./doc.html";
 	}
-
+	function nc(){
+		
+	}
+	if (window.location.href == 'https://author.borgcreative.com/?utm_term=cloud') {
+		document.getElementById("iframe").src = "./doc.html";
+		document.getElementById("printbtn").style.visibility = 'hidden';
+		document.getElementById("menu1").style.visibility = 'hidden';
+		document.getElementById("menu3").style.visibility = 'hidden';
+	}
 
 </script>
 </footer>

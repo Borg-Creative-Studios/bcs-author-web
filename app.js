@@ -19,6 +19,23 @@ document.getElementById("body").style.color =
 document.getElementById("footer").style.color =
         localStorage["footerc"] || "#000"; // default text
     
+
+        document.getElementById("heading").style.fontWeight =
+        localStorage["titlefw"] || "normal"; // default text
+  document.getElementById("body").style.fontWeight =
+        localStorage["textfw"] || "normal"; // default text
+  document.getElementById("footer").style.fontWeight =
+          localStorage["footerfw"] || "normal"; // default text
+      
+          document.getElementById("heading").style.fontStyle =
+          localStorage["titlefs"] || "normal"; // default text
+    document.getElementById("body").style.fontStyle =
+          localStorage["textfs"] || "normal"; // default text
+    document.getElementById("footer").style.fontStyle =
+            localStorage["footerfs"] || "normal"; // default text
+        
+
+
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
   localStorage["title"] = document.getElementById("heading").innerHTML + ' '; // heading div
@@ -32,6 +49,15 @@ setInterval(function() {
   localStorage["titlec"] = document.getElementById("heading").style.color + ' '; // heading div
   localStorage["textc"] = document.getElementById("body").style.color + ' '; // content div
   localStorage["footerc"] = document.getElementById("footer").style.color + ' '; // content div
+
+  localStorage["titlefw"] = document.getElementById("heading").style.fontWeight + ' '; // heading div
+  localStorage["textfw"] = document.getElementById("body").style.fontWeight + ' '; // content div
+  localStorage["footerfw"] = document.getElementById("footer").style.fontWeight + ' '; // content div
+
+  localStorage["titlefs"] = document.getElementById("heading").style.fontStyle + ' '; // heading div
+  localStorage["textfs"] = document.getElementById("body").style.fontStyle + ' '; // content div
+  localStorage["footerfs"] = document.getElementById("footer").style.fontStyle + ' '; // content div
+
 
 }, 1000);
 function clear(){
@@ -104,6 +130,45 @@ function Hleft(){
 function Hright(){
  document.getElementById("heading").style.textAlign = "right";
 }
+
+function Hnormal(){
+   document.getElementById("heading").style.fontWeight = "normal";
+   document.getElementById("heading").style.fontStyle = "normal";
+  }
+
+function Hbold(){
+   document.getElementById("heading").style.fontWeight = "bold";
+  }
+  function Hitalic(){
+   document.getElementById("heading").style.fontStyle = "italic";
+  }
+
+
+  function Bnormal(){
+   document.getElementById("body").style.fontWeight = "normal";
+   document.getElementById("body").style.fontStyle = "normal";
+  }
+
+function Bbold(){
+   document.getElementById("body").style.fontWeight = "bold";
+  }
+  function Bitalic(){
+   document.getElementById("body").style.fontStyle = "italic";
+  }
+
+
+function Fnormal(){
+   document.getElementById("footer").style.fontWeight = "normal";
+   document.getElementById("footer").style.fontStyle = "normal";
+  }
+
+function Fbold(){
+   document.getElementById("footer").style.fontWeight = "bold";
+  }
+  function Fitalic(){
+   document.getElementById("footer").style.fontStyle = "italic";
+  }
+
 
 function Bpf(){
    document.getElementById("body").className = "pf_m";
@@ -269,6 +334,25 @@ function bcustomcolor(){
 
    document.getElementById("body").style.color = document.getElementById("customcolor").value;
 }
+
+
+function hcustomfont(){
+   document.getElementById("heading").style.fontFamily = document.getElementById("customfont").value;
+}
+
+function bcustomfont(){
+   document.getElementById("heading").style.fontFamily = document.getElementById("customfont").value;
+}
+
+function fcustomfont(){
+   document.getElementById("heading").style.fontFamily = document.getElementById("customfont").value;
+}
+
+
+
+
+
+
 function fcustomcolor(){
 
 

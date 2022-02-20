@@ -4,6 +4,7 @@
 	<head>
 
 
+		<link rel="stylesheet" href="./textstyles.css">
 
 		<!--JazzBlocks Divided required code-->
 		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
@@ -23,9 +24,9 @@
 
 	<body onload="widthcontrold();" style="background-color: white; padding-left: 10px;padding-right: 10px; padding-bottom: 10px;">
 		<div id="document" style="position: fixed; top: 30px; width: 100%; height: 450px; overflow-y: scroll;">
-		 <div class="pn_l" id="heading" contenteditable="true"></div>
-		 <div class="pn_m" id="body" contenteditable="true"></div>
-		 <div style="padding-top: 5mm;" class="pn_m" id="footer" contenteditable="true"></div>
+		 <div style="padding-bottom: 0px; font-weight: normal; font-style: normal;" class="pn_l" id="heading" contenteditable="true"></div>
+		 <div style="padding-top: 0mm; font-weight: normal; font-style: normal;" class="pn_m" id="body" contenteditable="true"></div>
+		 <div style="padding-top: 5mm; font-weight: normal; font-style: normal;" class="pn_m" id="footer" contenteditable="true"></div>
 		</div>
 		 
 		 <div id="controlBar2" style=" padding: 0px; padding-top: 0px; width: 100%; border: none; border-color: #cecece;">
@@ -98,14 +99,28 @@
 								<button onclick="Hright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
 							  </div></center>
 						  </li>
+
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Hnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Hitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Hbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Hpf();">Header 1</a></li>
-						  <li><a class="dropdown-item" onclick="Hpn();">Header 2</a></li>
-						  <li><a class="dropdown-item" onclick="Hpc();">Header 3</a></li>
-						  <li><a class="dropdown-item" onclick="Hpo();">Header 4</a></li>
-						  <li><a class="dropdown-item" onclick="Hph();">Header 5</a></li>
+							<li><a class="dropdown-item" onclick="Hpf();">La Belle Aurore</a></li>
+						  <li><a class="dropdown-item" onclick="Hpn();">Literata</a></li>
+						  <li><a class="dropdown-item" onclick="Hpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item" onclick="Hpo();">Oswald</a></li>
+						  <li><a class="dropdown-item" onclick="Hph();">Chilanka</a></li>
 
+					
+							
+
+						  </li>
 
 						  <li><hr class="dropdown-divider"></li>
 						  <li><center>
@@ -147,12 +162,19 @@
 							  </div></center>
 						  </li>
 						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Bnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Bitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Bbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Bpf();">Body 1</a></li>
-						  <li><a class="dropdown-item" onclick="Bpn();">Body 2</a></li>
-						  <li><a class="dropdown-item" onclick="Bpc();">Body 3</a></li>
-						  <li><a class="dropdown-item" onclick="Bpo();">Body 4</a></li>
-						  <li><a class="dropdown-item" onclick="Bph();">Body 5</a></li>
+							<li><a class="dropdown-item" onclick="Bpf();">La Belle Aurore</a></li>
+						  <li><a class="dropdown-item" onclick="Bpn();">Literata</a></li>
+						  <li><a class="dropdown-item" onclick="Bpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item" onclick="Bpo();">Oswald</a></li>
+						  <li><a class="dropdown-item" onclick="Bph();">Chilanka</a></li>
 
 
 						  <li><hr class="dropdown-divider"></li>
@@ -199,12 +221,19 @@
 							  </div></center>
 						  </li>
 						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Fnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Fitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Fbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Fpf();">Footer 1</a></li>
-						  <li><a class="dropdown-item" onclick="Fpn();">Footer 2</a></li>
-						  <li><a class="dropdown-item" onclick="Fpc();">Footer 3</a></li>
-						  <li><a class="dropdown-item" onclick="Fpo();">Footer 4</a></li>
-						  <li><a class="dropdown-item" onclick="Fph();">Footer 5</a></li>
+							<li><a class="dropdown-item" onclick="Fpf();">La Belle Aurore</a></li>
+						  <li><a class="dropdown-item" onclick="Fpn();">Literata</a></li>
+						  <li><a class="dropdown-item" onclick="Fpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item" onclick="Fpo();">Oswald</a></li>
+						  <li><a class="dropdown-item" onclick="Fph();">Chilanka</a></li>
 
 
 						  <li><hr class="dropdown-divider"></li>
@@ -241,7 +270,7 @@
 
 					  <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						  Custom Colors
+						  Advanced
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li>
@@ -253,6 +282,17 @@
 								<button onclick="fcustomcolor();" type="button" class="btn btn-outline-secondary">Footer</button></center>
 							  </div>
 						  </li>
+						<!--  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center style="padding-top: 10px;"><input type="text" class="form-control-sm" id="customfont" value="" placeholder="#000000">
+						</li>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button onclick="hcustomfont();" type="button" class="btn btn-outline-secondary"> Header </button>
+							<button onclick="bcustomfont();" type="button" class="btn btn-outline-secondary">Body</button>
+							<button onclick="fcustomfont();" type="button" class="btn btn-outline-secondary">Footer</button></center>
+						  </div>
+					  </li>-->
+
 
 
 

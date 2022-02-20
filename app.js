@@ -261,18 +261,18 @@ function fblue(){
 function hcustomcolor(){
 
 
-   document.getElementById("heading").style.color = document.getElementById("hcustomcolor").value;
+   document.getElementById("heading").style.color = document.getElementById("customcolor").value;
 }
 
 function bcustomcolor(){
 
 
-   document.getElementById("body").style.color = document.getElementById("bcustomcolor").value;
+   document.getElementById("body").style.color = document.getElementById("customcolor").value;
 }
 function fcustomcolor(){
 
 
-   document.getElementById("footer").style.color = document.getElementById("fcustomcolor").value;
+   document.getElementById("footer").style.color = document.getElementById("customcolor").value;
 }
 
 function hrecallcolor(){

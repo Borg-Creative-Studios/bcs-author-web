@@ -43,6 +43,11 @@ document.getElementById("footer").style.color =
       document.getElementById("footer").style.textAlign =
               localStorage["footera"] || "left"; // default text
           
+              document.getElementById("document").style.margin =
+              localStorage["margins"] || "0px"; // default text
+              document.getElementById("document").style.paddingBottom =
+              localStorage["padding"] || "0px"; // default text
+          
 
             
 
@@ -71,6 +76,9 @@ setInterval(function() {
   localStorage["titlea"] = document.getElementById("heading").style.textAlign + ' '; // heading div
   localStorage["texta"] = document.getElementById("body").style.textAlign + ' '; // content div
   localStorage["footera"] = document.getElementById("footer").style.textAlign + ' '; // content div
+
+  localStorage["margins"] = document.getElementById("document").style.margin + ' '; // content div
+  localStorage["padding"] = document.getElementById("document").style.paddingBottom + ' '; // content div
 
 }, 1000);
 function clear(){
@@ -467,4 +475,18 @@ function expand() {
 
 function shrink() {
    document.getElementById("document").style.height = "3in";
+}
+
+
+function setmargint() {
+   document.getElementById("document").style.marginTop = document.getElementById("custommargin").value;
+}
+function setmarginr() {
+   document.getElementById("document").style.marginRight = document.getElementById("custommargin").value;
+}
+function setmarginb() {
+   document.getElementById("document").style.paddingBottom = document.getElementById("custommargin").value;
+}
+function setmarginl() {
+   document.getElementById("document").style.marginLeft = document.getElementById("custommargin").value;
 }

@@ -36,6 +36,16 @@ document.getElementById("footer").style.color =
         
 
 
+            document.getElementById("heading").style.textAlign =
+            localStorage["titlea"] || "left"; // default text
+      document.getElementById("body").style.textAlign =
+            localStorage["texta"] || "left"; // default text
+      document.getElementById("footer").style.textAlign =
+              localStorage["footera"] || "left"; // default text
+          
+
+            
+
 setInterval(function() {
   // fuction that is saving the innerHTML of the div
   localStorage["title"] = document.getElementById("heading").innerHTML + ' '; // heading div
@@ -58,6 +68,9 @@ setInterval(function() {
   localStorage["textfs"] = document.getElementById("body").style.fontStyle + ' '; // content div
   localStorage["footerfs"] = document.getElementById("footer").style.fontStyle + ' '; // content div
 
+  localStorage["titlea"] = document.getElementById("heading").style.textAlign + ' '; // heading div
+  localStorage["texta"] = document.getElementById("body").style.textAlign + ' '; // content div
+  localStorage["footera"] = document.getElementById("footer").style.textAlign + ' '; // content div
 
 }, 1000);
 function clear(){

@@ -25,9 +25,152 @@
 	<body onload="widthcontrold();" style="background-color: white; padding-left: 10px;padding-right: 10px; padding-bottom: 10px;">
 		<div id="document" style="position: fixed; top: 30px; width: 100%; height: 450px; overflow-y: scroll;">
 		 <div style="padding-bottom: 0px; font-weight: normal; font-style: normal;" class="pn_l" id="heading" contenteditable="true"></div>
+
+		 <div id="mobileditor1" class="dropdown">
+			<button class="btn btn-outline-secondary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+				<span><img src="./img/edit.svg" alt="Editor menu"></span>
+			</button>
+
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Hleft();" type="button" class="btn btn-outline-secondary"> <img src="./img/align-left.svg" alt="Align Left"> </button>
+								<button onclick="Hcenter();" type="button" class="btn btn-outline-secondary"><img src="./img/align-center.svg" alt="Align Center"></button>
+								<button onclick="Hright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
+							  </div></center>
+						  </li>
+
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Hnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Hitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Hbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+
+						  <li><hr class="dropdown-divider"></li>
+							
+							<li><a class="dropdown-item" onclick="Hpf();">La Belle Aurore</a></li>
+						  <li><a class="dropdown-item" onclick="Hpn();">Literata</a></li>
+						  <li><a class="dropdown-item" onclick="Hpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item" onclick="Hpo();">Oswald</a></li>
+						  <li><a class="dropdown-item" onclick="Hph();">Chilanka</a></li>
+
+					
+							
+
+						  </li>
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li><center>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="hblack();" type="button" class="btn btn-outline-dark"> <img src="./img/droplet.svg" alt="Black"> </button>
+								<button onclick="hgreen();" type="button" class="btn btn-outline-success"><img src="./img/droplet.svg" alt="Green"></button>
+								<button onclick="hred();" type="button" class="btn btn-outline-danger"><img src="./img/droplet.svg" alt="Red"></button>
+								<button onclick="hblue();" type="button" class="btn btn-outline-primary"><img src="./img/droplet.svg" alt="Blue"></button>
+							</div></center>
+						  </li>
+			</ul>
+		  </div>
+
 		 <div style="padding-top: 0mm; font-weight: normal; font-style: normal;" class="pn_m" id="body" contenteditable="true"></div>
+		 <div id="mobileditor2" class="dropdown">
+			<button class="btn btn-outline-secondary " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+				<span><img src="./img/edit.svg" alt="Editor menu"></span>
+			</button>
+
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Bleft();" type="button" class="btn btn-outline-secondary"> <img src="./img/align-left.svg" alt="Align Left"> </button>
+								<button onclick="Bcenter();" type="button" class="btn btn-outline-secondary"><img src="./img/align-center.svg" alt="Align Center"></button>
+								<button onclick="Bright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
+							  </div></center>
+						  </li>
+
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Bnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Bitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Bbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+
+						  <li><hr class="dropdown-divider"></li>
+							
+							<li><a class="dropdown-item" onclick="Bpf();">La Belle Aurore</a></li>
+						  <li><a class="dropdown-item" onclick="Bpn();">Literata</a></li>
+						  <li><a class="dropdown-item" onclick="Bpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item" onclick="Bpo();">Oswald</a></li>
+						  <li><a class="dropdown-item" onclick="Bph();">Chilanka</a></li>
+
+					
+							
+
+						  </li>
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li><center>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="bblack();" type="button" class="btn btn-outline-dark"> <img src="./img/droplet.svg" alt="Black"> </button>
+								<button onclick="bgreen();" type="button" class="btn btn-outline-success"><img src="./img/droplet.svg" alt="Green"></button>
+								<button onclick="bred();" type="button" class="btn btn-outline-danger"><img src="./img/droplet.svg" alt="Red"></button>
+								<button onclick="bblue();" type="button" class="btn btn-outline-primary"><img src="./img/droplet.svg" alt="Blue"></button>
+							</div></center>
+						  </li>
+			</ul>
+		  </div>
+
 		 <div style="padding-top: 5mm; font-weight: normal; font-style: normal;" class="pn_m" id="footer" contenteditable="true"></div>
+		
+		 <div id="mobileditor3" class="dropdown">
+			<button class="btn btn-outline-secondary " type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+				<span><img src="./img/edit.svg" alt="Editor menu"></span>
+			</button>
+
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Fleft();" type="button" class="btn btn-outline-secondary"> <img src="./img/align-left.svg" alt="Align Left"> </button>
+								<button onclick="Fcenter();" type="button" class="btn btn-outline-secondary"><img src="./img/align-center.svg" alt="Align Center"></button>
+								<button onclick="Fright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
+							  </div></center>
+						  </li>
+
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Fnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Fitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Fbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+
+						  <li><hr class="dropdown-divider"></li>
+							
+							<li><a class="dropdown-item" onclick="Fpf();">La Belle Aurore</a></li>
+						  <li><a class="dropdown-item" onclick="Fpn();">Literata</a></li>
+						  <li><a class="dropdown-item" onclick="Fpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item" onclick="Fpo();">Oswald</a></li>
+						  <li><a class="dropdown-item" onclick="Fph();">Chilanka</a></li>
+
+					
+							
+
+						  </li>
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li><center>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="fblack();" type="button" class="btn btn-outline-dark"> <img src="./img/droplet.svg" alt="Black"> </button>
+								<button onclick="fgreen();" type="button" class="btn btn-outline-success"><img src="./img/droplet.svg" alt="Green"></button>
+								<button onclick="fred();" type="button" class="btn btn-outline-danger"><img src="./img/droplet.svg" alt="Red"></button>
+								<button onclick="fblue();" type="button" class="btn btn-outline-primary"><img src="./img/droplet.svg" alt="Blue"></button>
+							</div></center>
+						  </li>
+			</ul>
+		  </div>
 		</div>
+
 		 
 		 <div id="controlBar2" style=" padding: 0px; padding-top: 0px; width: 100%; border: none; border-color: #cecece;">
 			<nav style="top: 0mm; left: 0mm; right: 0mm; position: fixed;" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -85,7 +228,7 @@
 
 
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div id="mobilehide1" class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 					  <li class="nav-item dropdown">
@@ -147,7 +290,7 @@
 
 
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div id="mobilehide2" class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 					  <li class="nav-item dropdown">
@@ -206,7 +349,7 @@
 
 
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div id="mobilehide3" class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 					  <li class="nav-item dropdown">
@@ -331,6 +474,15 @@
 			function widthcontrold(){
 				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 					document.getElementById("savebtn").innerHTML = '';
+					document.getElementById("mobilehide1").innerHTML = '';
+					document.getElementById("mobilehide2").innerHTML = '';
+					document.getElementById("mobilehide3").innerHTML = '';
+				} else {
+					document.getElementById("mobileditor1").innerHTML = '';
+					document.getElementById("mobileditor2").innerHTML = '';
+					document.getElementById("mobileditor3").innerHTML = '';
+
+					
 }
 
 

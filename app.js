@@ -83,7 +83,24 @@ if (x.style.display === "none") {
   x.style.display = "visible";
 }
 }
+
+function hide3(){
+   document.getElementById("mobileditor1").style.visibility = 'hidden';
+   document.getElementById("mobileditor2").style.visibility = 'hidden';
+   document.getElementById("mobileditor3").style.visibility = 'hidden';
+
+}
+function show3(){
+   document.getElementById("mobileditor1").style.visibility = 'visible';
+   document.getElementById("mobileditor2").style.visibility = 'visible';
+   document.getElementById("mobileditor3").style.visibility = 'visible';
+
+}
 function hide2(){
+
+   
+
+
    document.getElementById("ab").style.visibility = 'visible';
 var x = document.getElementById("controlBar2");
 if (x.style.display === "none") {

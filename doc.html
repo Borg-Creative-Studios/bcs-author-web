@@ -12,8 +12,17 @@
 		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
 		<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
 		<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
-		<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
 		<!--end-->
+		<!--Font Links-->
+		<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+		<!--end-->
+
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	  <title>Author</title>
@@ -50,12 +59,13 @@
 
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Hpf();">La Belle Aurore</a></li>
-						  <li><a class="dropdown-item" onclick="Hpn();">Literata</a></li>
-						  <li><a class="dropdown-item" onclick="Hpc();">Ubuntu</a></li>
-						  <li><a class="dropdown-item" onclick="Hpo();">Oswald</a></li>
-						  <li><a class="dropdown-item" onclick="Hph();">Chilanka</a></li>
-
+						  <li><a class="dropdown-item pf_m" onclick="Hpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Hpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Hpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Hpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Hph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Hqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans Condensed</a></li>
 					
 							
 
@@ -98,14 +108,14 @@
 
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Bpf();">La Belle Aurore</a></li>
-						  <li><a class="dropdown-item" onclick="Bpn();">Literata</a></li>
-						  <li><a class="dropdown-item" onclick="Bpc();">Ubuntu</a></li>
-						  <li><a class="dropdown-item" onclick="Bpo();">Oswald</a></li>
-						  <li><a class="dropdown-item" onclick="Bph();">Chilanka</a></li>
+						  <li><a class="dropdown-item pf_m" onclick="Bpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Bpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Bpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Bpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Bph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Bqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans Condensed</a></li>
 
-					
-							
 
 						  </li>
 
@@ -147,14 +157,13 @@
 
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Fpf();">La Belle Aurore</a></li>
-						  <li><a class="dropdown-item" onclick="Fpn();">Literata</a></li>
-						  <li><a class="dropdown-item" onclick="Fpc();">Ubuntu</a></li>
-						  <li><a class="dropdown-item" onclick="Fpo();">Oswald</a></li>
-						  <li><a class="dropdown-item" onclick="Fph();">Chilanka</a></li>
-
-					
-							
+						  <li><a class="dropdown-item pf_m" onclick="Fpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Fpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Fpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Fpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Fph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Fqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans Condensed</a></li>
 
 						  </li>
 
@@ -254,14 +263,13 @@
 
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Hpf();">La Belle Aurore</a></li>
-						  <li><a class="dropdown-item" onclick="Hpn();">Literata</a></li>
-						  <li><a class="dropdown-item" onclick="Hpc();">Ubuntu</a></li>
-						  <li><a class="dropdown-item" onclick="Hpo();">Oswald</a></li>
-						  <li><a class="dropdown-item" onclick="Hph();">Chilanka</a></li>
-
-					
-							
+						  <li><a class="dropdown-item pf_m" onclick="Hpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Hpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Hpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Hpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Hph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Hqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans Condensed</a></li>
 
 						  </li>
 
@@ -313,13 +321,13 @@
 							  </div></center>
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Bpf();">La Belle Aurore</a></li>
-						  <li><a class="dropdown-item" onclick="Bpn();">Literata</a></li>
-						  <li><a class="dropdown-item" onclick="Bpc();">Ubuntu</a></li>
-						  <li><a class="dropdown-item" onclick="Bpo();">Oswald</a></li>
-						  <li><a class="dropdown-item" onclick="Bph();">Chilanka</a></li>
-
-
+						  <li><a class="dropdown-item pf_m" onclick="Bpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Bpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Bpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Bpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Bph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Bqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans Condensed</a></li>
 						  <li><hr class="dropdown-divider"></li>
 						  <li><center></center>
 							<div class="btn-group" role="group" aria-label="Basic example">
@@ -372,12 +380,13 @@
 							  </div></center>
 						  <li><hr class="dropdown-divider"></li>
 							
-							<li><a class="dropdown-item" onclick="Fpf();">La Belle Aurore</a></li>
-						  <li><a class="dropdown-item" onclick="Fpn();">Literata</a></li>
-						  <li><a class="dropdown-item" onclick="Fpc();">Ubuntu</a></li>
-						  <li><a class="dropdown-item" onclick="Fpo();">Oswald</a></li>
-						  <li><a class="dropdown-item" onclick="Fph();">Chilanka</a></li>
-
+							<li><a class="dropdown-item pf_m" onclick="Fpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Fpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Fpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Fpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Fph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Fqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans Condensed</a></li>
 
 						  <li><hr class="dropdown-divider"></li>
 						  <li>

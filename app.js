@@ -159,6 +159,9 @@ function Hpo(){
 function Hph(){
    document.getElementById("heading").className = "ph_l";
 }
+
+
+
 function Hcenter(){
  document.getElementById("heading").style.textAlign = "center";
 }
@@ -256,6 +259,30 @@ function Fleft(){
 function Fright(){
  document.getElementById("footer").style.textAlign = "right";
 }
+
+/*New Styles */
+function Hqs(){
+   document.getElementById("heading").className = "qs_l";
+}
+function Bqs(){
+   document.getElementById("body").className = "qs_m";
+}
+function Fqs(){
+   document.getElementById("footer").className = "qs_m";
+}
+
+function Hos(){
+   document.getElementById("heading").className = "os_l";
+}
+function Bos(){
+   document.getElementById("body").className = "os_m";
+}
+function Fos(){
+   document.getElementById("footer").className = "os_m";
+}
+/*end */
+
+
 
 function black(){
    document.getElementById("heading").style.color = "black";

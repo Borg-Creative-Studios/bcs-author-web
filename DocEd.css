@@ -1,5 +1,5 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Quicksand:wght@300;400;500;700&display=swap');
 html {
   font-family: "Helevetica", sans-serif;
   width: 100%;
@@ -81,4 +81,30 @@ div:focus {
   display: block;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.3s;
+}
+
+.qs_l {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 8mm;
+}
+.qs_m {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 5mm;
+}
+.qs_s {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3mm;
+}
+
+.os_l {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 8mm;
+}
+.os_m {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5mm;
+}
+.os_s {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3mm;
 }

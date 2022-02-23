@@ -588,7 +588,7 @@ function cleardocument() {
    document.getElementById("body").innerHTML = 'The Body';
    document.getElementById("footer").innerHTML = 'The Footer';
 
-   localStorage["titles"] = 'pn_l';
+      localStorage["titles"] = 'pn_l';
    localStorage["bodys"] = 'pn_m';
    localStorage["footers"] = 'pn_m';
    
@@ -634,7 +634,7 @@ function cleardocument() {
 
    localStorage["padding"] = '10px';
 
-   document.getElementById("document").style.paddpaddingBottoming = '10px';
+   document.getElementById("document").style.paddingBottom = '10px';
 
 
    

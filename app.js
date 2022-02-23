@@ -1,3 +1,4 @@
+
 document.getElementById("heading").innerHTML =
   localStorage["title"] || "The title"; // default text
 document.getElementById("body").innerHTML =
@@ -52,7 +53,11 @@ document.getElementById("footer").style.color =
             
 
 setInterval(function() {
+
   // fuction that is saving the innerHTML of the div
+
+
+
   localStorage["title"] = document.getElementById("heading").innerHTML + ' '; // heading div
   localStorage["text"] = document.getElementById("body").innerHTML + ' '; // content div
   localStorage["footer"] = document.getElementById("footer").innerHTML + ' '; // content div
@@ -517,3 +522,123 @@ function setmarginb() {
 function setmarginl() {
    document.getElementById("document").style.marginLeft = document.getElementById("custommargin").value;
 }
+
+function settitle() {
+   document.getElementById("heading").innerHTML =
+   localStorage["title"+document.getElementById("documentname").value] || "The title"; // default text
+}
+
+function resetstyles() {
+   localStorage["titles"] = 'pn_l';
+   localStorage["bodys"] = 'pn_m';
+   localStorage["footers"] = 'pn_m';
+   
+   document.getElementById("heading").className = 'pn_l';
+   document.getElementById("body").className = 'pn_m';
+   document.getElementById("footer").className = 'pn_m';
+
+   localStorage["titlec"] = '#000';
+   localStorage["bodyc"] = '#000';
+   localStorage["footerc"] = '#000';
+
+   document.getElementById("heading").style.color = '#000';
+   document.getElementById("body").style.color = '#000';
+   document.getElementById("footer").style.color = '#000';
+
+   localStorage["titlefw"] = 'normal';
+   localStorage["bodyfw"] = 'normal';
+   localStorage["footerfw"] = 'normal';
+
+   document.getElementById("heading").style.fontWeight = 'normal';
+   document.getElementById("body").style.fontWeight = 'normal';
+   document.getElementById("footer").style.fontWeight = 'normal';
+
+   localStorage["titlefs"] = 'normal';
+   localStorage["bodyfs"] = 'normal';
+   localStorage["footerfs"] = 'normal';
+
+   document.getElementById("heading").style.fontStyle = 'normal';
+   document.getElementById("body").style.fontStyle = 'normal';
+   document.getElementById("footer").style.fontStyle = 'normal';
+
+   localStorage["titlea"] = 'left';
+   localStorage["bodya"] = 'left';
+   localStorage["footera"] = 'left';
+
+   document.getElementById("heading").style.textAlign = 'left';
+   document.getElementById("body").style.textAlign = 'left';
+   document.getElementById("footer").style.textAlign = 'left';
+
+   localStorage["margins"] = '10px';
+
+   document.getElementById("document").style.margin = '10px';
+
+   localStorage["padding"] = '10px';
+
+   document.getElementById("document").style.paddpaddingBottoming = '10px';
+
+}
+
+function cleardocument() {
+   localStorage["title"] = '';
+   localStorage["body"] = '';
+   localStorage["footer"] = '';
+   
+   document.getElementById("heading").innerHTML = 'The Title';
+   document.getElementById("body").innerHTML = 'The Body';
+   document.getElementById("footer").innerHTML = 'The Footer';
+
+   localStorage["titles"] = 'pn_l';
+   localStorage["bodys"] = 'pn_m';
+   localStorage["footers"] = 'pn_m';
+   
+   document.getElementById("heading").className = 'pn_l';
+   document.getElementById("body").className = 'pn_m';
+   document.getElementById("footer").className = 'pn_m';
+
+   localStorage["titlec"] = '#000';
+   localStorage["bodyc"] = '#000';
+   localStorage["footerc"] = '#000';
+
+   document.getElementById("heading").style.color = '#000';
+   document.getElementById("body").style.color = '#000';
+   document.getElementById("footer").style.color = '#000';
+
+   localStorage["titlefw"] = 'normal';
+   localStorage["bodyfw"] = 'normal';
+   localStorage["footerfw"] = 'normal';
+
+   document.getElementById("heading").style.fontWeight = 'normal';
+   document.getElementById("body").style.fontWeight = 'normal';
+   document.getElementById("footer").style.fontWeight = 'normal';
+
+   localStorage["titlefs"] = 'normal';
+   localStorage["bodyfs"] = 'normal';
+   localStorage["footerfs"] = 'normal';
+
+   document.getElementById("heading").style.fontStyle = 'normal';
+   document.getElementById("body").style.fontStyle = 'normal';
+   document.getElementById("footer").style.fontStyle = 'normal';
+
+   localStorage["titlea"] = 'left';
+   localStorage["bodya"] = 'left';
+   localStorage["footera"] = 'left';
+
+   document.getElementById("heading").style.textAlign = 'left';
+   document.getElementById("body").style.textAlign = 'left';
+   document.getElementById("footer").style.textAlign = 'left';
+
+   localStorage["margins"] = '10px';
+
+   document.getElementById("document").style.margin = '10px';
+
+   localStorage["padding"] = '10px';
+
+   document.getElementById("document").style.paddpaddingBottoming = '10px';
+
+
+   
+}
+
+
+

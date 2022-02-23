@@ -29,6 +29,9 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preload" href="DocEd.css"/>
 	  <link rel="stylesheet" href="DocEd.css"/>
+
+
+	  <div id="identifier" content=""></div>
 	</head>
 
 	<body onload="widthcontrold();" style="background-color: white; padding-left: 10px;padding-right: 10px; padding-bottom: 10px;">
@@ -448,6 +451,22 @@
 								<button onclick="setmarginl();" type="button" class="btn btn-outline-secondary"> <img src="./img/arrow-left.svg" alt=""> </button>
 
 							</div></center></li>
+							<li><hr class="dropdown-divider"></li>
+							<li style="text-align: center;">DANGER: The following cannot be undone.</li>
+							<li>
+								<center style="padding-top: 10px;"><div class="btn-group" role="group" aria-label="Basic example">
+									<button onclick="resetstyles();" type="button" class="btn btn-outline-danger">Reset Styles <img src="./img/trash-2.svg" alt=""> </button>
+
+								</div></center></li>
+							
+							<li>
+								<center style="padding-top: 10px;"><div class="btn-group" role="group" aria-label="Basic example">
+									<button onclick="cleardocument();" type="button" class="btn btn-outline-danger">Delete Document <img src="./img/trash-2.svg" alt=""> </button>
+
+								</div></center></li>	
+							
+							
+							</li>
 						<!--  <li><hr class="dropdown-divider"></li>
 						  <li>
 							<center style="padding-top: 10px;"><input type="text" class="form-control-sm" id="customfont" value="" placeholder="#000000">
@@ -473,7 +492,12 @@
 							
 						</ul>
 					  </li>
-
+					<!--  <li class="nav-link" >
+						<input type="text" class="form-control-sm" id="documentname" value="" placeholder='Document name'>
+					  </li>
+					  <li class="nav-item" >
+						  <a class="nav-link"  href="" onclick="settitle()">Save</a>
+					  </li>-->
 					</ul>
 
 				  </div>

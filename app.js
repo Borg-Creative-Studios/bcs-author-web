@@ -297,6 +297,26 @@ function Bmo(){
 function Fmo(){
    document.getElementById("footer").className = "mo_m";
 }
+
+function Hru(){
+   document.getElementById("heading").className = "ru_l";
+}
+function Bru(){
+   document.getElementById("body").className = "ru_m";
+}
+function Fru(){
+   document.getElementById("footer").className = "ru_m";
+}
+
+function Hba(){
+   document.getElementById("heading").className = "ba_l";
+}
+function Bba(){
+   document.getElementById("body").className = "ba_m";
+}
+function Fba(){
+   document.getElementById("footer").className = "ba_m";
+}
 /*end */
 
 

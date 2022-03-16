@@ -113,3 +113,17 @@ div:focus {
   font-family: 'Open Sans', sans-serif;
   font-size: 3mm;
 }
+
+
+.mo_l {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 8mm;
+}
+.mo_m {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 5mm;
+}
+.mo_s {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 3mm;
+}

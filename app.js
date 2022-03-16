@@ -285,6 +285,18 @@ function Bos(){
 function Fos(){
    document.getElementById("footer").className = "os_m";
 }
+
+
+
+function Hmo(){
+   document.getElementById("heading").className = "mo_l";
+}
+function Bmo(){
+   document.getElementById("body").className = "mo_m";
+}
+function Fmo(){
+   document.getElementById("footer").className = "mo_m";
+}
 /*end */
 
 

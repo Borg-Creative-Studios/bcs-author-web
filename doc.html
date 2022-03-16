@@ -11,16 +11,23 @@
 		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
 		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
 		<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
-		<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+		
+		
+		<!--
+			<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+		-->
 		<!--end-->
 		<!--Font Links-->
+		<link rel="stylesheet" href="https://fonts.borgcreative.com/fonts.css">
+
+		<!--
 		<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-
+		-->
 
 		<!--end-->
 
@@ -37,6 +44,8 @@
 
 	<body onload="widthcontrold();" style="background-color: white; padding-left: 10px;padding-right: 10px; padding-bottom: 10px;">
 		<div id="document" style="position: fixed; top: 30px; width: 100%; height: 450px; overflow-y: scroll;">
+
+<!--Doc Header-->
 		 <div style="padding-bottom: 0px; font-weight: normal; font-style: normal;" class="pn_l" id="heading" contenteditable="true"></div>
 
 		 <div style="visibility: visible;" id="mobileditor1" class="dropdown">
@@ -69,7 +78,7 @@
 						  <li><a class="dropdown-item po_m" onclick="Hpo();">Oswald</a></li>
 						  <li><a class="dropdown-item ph_m" onclick="Hph();">Chilanka</a></li>
 						  <li><a class="dropdown-item qs_m" onclick="Hqs();">Quicksand</a></li>
-						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans Condensed</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans</a></li>
 					
 							
 
@@ -87,6 +96,7 @@
 			</ul>
 		  </div>
 
+<!--Doc Body-->
 		 <div style="padding-top: 0mm; font-weight: normal; font-style: normal;" class="pn_m" id="body" contenteditable="true"></div>
 		 <div style="visibility: visible;" id="mobileditor2" class="dropdown">
 			<button class="btn btn-outline-secondary " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -118,7 +128,7 @@
 						  <li><a class="dropdown-item po_m" onclick="Bpo();">Oswald</a></li>
 						  <li><a class="dropdown-item ph_m" onclick="Bph();">Chilanka</a></li>
 						  <li><a class="dropdown-item qs_m" onclick="Bqs();">Quicksand</a></li>
-						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans Condensed</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans</a></li>
 
 
 						  </li>
@@ -135,6 +145,7 @@
 			</ul>
 		  </div>
 
+<!--Doc Footer-->
 		 <div style="padding-top: 5mm; font-weight: normal; font-style: normal;" class="pn_m" id="footer" contenteditable="true"></div>
 		
 		 <div style="visibility: visible;" id="mobileditor3" class="dropdown">
@@ -167,7 +178,7 @@
 						  <li><a class="dropdown-item po_m" onclick="Fpo();">Oswald</a></li>
 						  <li><a class="dropdown-item ph_m" onclick="Fph();">Chilanka</a></li>
 						  <li><a class="dropdown-item qs_m" onclick="Fqs();">Quicksand</a></li>
-						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans Condensed</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans</a></li>
 
 						  </li>
 
@@ -274,7 +285,7 @@
 						  <li><a class="dropdown-item po_m" onclick="Hpo();">Oswald</a></li>
 						  <li><a class="dropdown-item ph_m" onclick="Hph();">Chilanka</a></li>
 						  <li><a class="dropdown-item qs_m" onclick="Hqs();">Quicksand</a></li>
-						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans Condensed</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans</a></li>
 
 						  </li>
 
@@ -332,7 +343,7 @@
 						  <li><a class="dropdown-item po_m" onclick="Bpo();">Oswald</a></li>
 						  <li><a class="dropdown-item ph_m" onclick="Bph();">Chilanka</a></li>
 						  <li><a class="dropdown-item qs_m" onclick="Bqs();">Quicksand</a></li>
-						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans Condensed</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans</a></li>
 						  <li><hr class="dropdown-divider"></li>
 						  <li><center></center>
 							<div class="btn-group" role="group" aria-label="Basic example">
@@ -391,7 +402,7 @@
 						  <li><a class="dropdown-item po_m" onclick="Fpo();">Oswald</a></li>
 						  <li><a class="dropdown-item ph_m" onclick="Fph();">Chilanka</a></li>
 						  <li><a class="dropdown-item qs_m" onclick="Fqs();">Quicksand</a></li>
-						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans Condensed</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans</a></li>
 
 						  <li><hr class="dropdown-divider"></li>
 						  <li>

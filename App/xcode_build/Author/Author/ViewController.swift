@@ -19,7 +19,7 @@ class ViewController: NSViewController, NSApplicationDelegate, WKNavigationDeleg
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        webView.load(URLRequest(url: URL(string: "https://borg-creative-studios.github.io/fruity-website/2-0-1.html")!))
+        webView.load(URLRequest(url: URL(string: "https://author.borgcreative.com/?utm_term=app")!))
     }
 
     override var representedObject: Any? {

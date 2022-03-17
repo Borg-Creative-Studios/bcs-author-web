@@ -701,7 +701,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="74" y="250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -711,7 +711,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <wkWebView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-dO-bcm">
+                            <wkWebView identifier="WKWebView" wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-dO-bcm">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -722,7 +722,8 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="9cI-dO-bcm" id="kBd-bp-FRi"/>
+                        <outlet property="webView" destination="9cI-dO-bcm" id="mcr-ud-T0e"/>
+                        <outlet property="window" destination="m2S-Jp-Qdl" id="iLu-Du-L0W"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

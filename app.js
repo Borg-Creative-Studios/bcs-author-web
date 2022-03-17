@@ -522,6 +522,9 @@ function doc6(){
 function doc7(){
    document.getElementById("iframe").src = "./doc7.html";
 }
+function docapp(){
+   document.getElementById("iframe").src = "./docapp.html";
+}
 
 function privacy(){
    document.getElementById("iframe").src = "./privacy.html";

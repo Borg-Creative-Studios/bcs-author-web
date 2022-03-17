@@ -1,0 +1,584 @@
+
+
+<html>
+	<head>
+
+
+		<link rel="stylesheet" href="./textstyles.css">
+
+		<!--JazzBlocks Divided required code-->
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/textStyles.css">
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/buttons.css">
+		<link rel="stylesheet" href="https://dev.jacobborgprogramming.net/JazzBlocksLibrary/libraries/everythingelse.css">
+		<link rel="preload" href="https://dev.jacobborgprogramming.net/libraries/JazzBlocksFunctions.js" as="script">
+		
+		
+		<!--
+			<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
+		-->
+		<!--end-->
+		<!--Font Links-->
+		<link rel="stylesheet" href="https://fonts.borgcreative.com/fonts.css">
+
+		<!--
+		<link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+		-->
+
+		<!--end-->
+
+		<link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
+		<script src="./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+	  <title>Author</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preload" href="DocEd.css"/>
+	  <link rel="stylesheet" href="DocEd.css"/>
+
+
+	  <div id="identifier" content=""></div>
+	</head>
+
+	<body onload="widthcontrold();" style="background-color: white; padding-left: 10px;padding-right: 10px; padding-bottom: 10px;">
+		<div id="document" style="position: fixed; top: 30px; width: 100%; height: 450px; overflow-y: scroll;">
+
+<!--Doc Header-->
+		 <div style="padding-bottom: 0px; font-weight: normal; font-style: normal;" class="pn_l" id="heading" contenteditable="true"></div>
+
+
+<!--Doc Body-->
+		 <div style="padding-top: 0mm; font-weight: normal; font-style: normal;" class="pn_m" id="body" contenteditable="true"></div>
+
+
+<!--Doc Footer-->
+		 <div style="padding-top: 5mm; font-weight: normal; font-style: normal;" class="pn_m" id="footer" contenteditable="true"></div>
+		
+
+		</div>
+
+		 
+		 <div id="controlBar2" style=" padding: 0px; padding-top: 0px; width: 100%; border: none; border-color: #cecece;">
+			<nav style="top: 0mm; left: 0mm; right: 0mm; position: fixed;" class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+				  <!--<a class="navbar-brand" href="#">Navbar</a>-->
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<!--<span class="navbar-toggler-icon"></span>-->
+					<span><img src="./img/edit.svg" alt="Editor menu"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  File
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+						  </li>
+						  <!--<li>
+							<a class="dropdown-item" onclick="hrecallcolor();brecallcolor();frecallcolor();colorinspect();">Color Inspector</a>
+						  </li>
+						   <div>
+							<p id="inspectortitle"></p>		
+							<p id="inspector1"></p>
+							<p id="inspector2"></p>
+							<p id="inspector3"></p>
+							<p id="inspectorcontrols"></p>
+						   </div>-->
+
+							
+							<li><a class="dropdown-item" onclick="hide2(); hide3();">Hide Control Bar</a></li>
+							<!--<li id="printbtn"><a style="visibility: visible;" href="./docprint.html?utm_term=print" target="_blank" class="dropdown-item" >Print</a></li>
+
+							<script src="./js/FileSaver.js"></script>
+							<li id="savebtn"><a class="dropdown-item" onclick="save();">Save (Beta)</a></li>-->
+
+
+						
+						<!--
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+
+						-->
+							
+						</ul>
+					  </li>
+
+					</ul>
+
+
+
+
+
+
+
+<!--Main Control Bar-->
+				  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Header
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Hleft();" type="button" class="btn btn-outline-secondary"> <img src="./img/align-left.svg" alt="Align Left"> </button>
+								<button onclick="Hcenter();" type="button" class="btn btn-outline-secondary"><img src="./img/align-center.svg" alt="Align Center"></button>
+								<button onclick="Hright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
+							  </div></center>
+						  </li>
+
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Hnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Hitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Hbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+
+						  <li><hr class="dropdown-divider"></li>
+
+						  <li><a class="dropdown-item pf_m" onclick="Hpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Hpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Hpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Hpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Hph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Hqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Hos();">Open Sans</a></li>
+
+						  </li>
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li><center>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="hblack();" type="button" class="btn btn-outline-dark"> <img src="./img/droplet.svg" alt="Black"> </button>
+								<button onclick="hgreen();" type="button" class="btn btn-outline-success"><img src="./img/droplet.svg" alt="Green"></button>
+								<button onclick="hred();" type="button" class="btn btn-outline-danger"><img src="./img/droplet.svg" alt="Red"></button>
+								<button onclick="hblue();" type="button" class="btn btn-outline-primary"><img src="./img/droplet.svg" alt="Blue"></button>
+							</div></center>
+						  </li>
+						
+						<!--
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+
+						-->
+							
+						</ul>
+					  </li>
+
+					</ul>
+
+
+
+
+				  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Body
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Bleft();" type="button" class="btn btn-outline-secondary"> <img src="./img/align-left.svg" alt="Align Left"> </button>
+								<button onclick="Bcenter();" type="button" class="btn btn-outline-secondary"><img src="./img/align-center.svg" alt="Align Center"></button>
+								<button onclick="Bright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
+							  </div></center>
+						  </li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Bnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Bitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Bbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+						  <li><hr class="dropdown-divider"></li>
+							
+						  <li><a class="dropdown-item pf_m" onclick="Bpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Bpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Bpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Bpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Bph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Bqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Bos();">Open Sans</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><center></center>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="bblack();" type="button" class="btn btn-outline-dark"> <img src="./img/droplet.svg" alt="Black"> </button>
+								<button onclick="bgreen();" type="button" class="btn btn-outline-success"><img src="./img/droplet.svg" alt="Green"></button>
+								<button onclick="bred();" type="button" class="btn btn-outline-danger"><img src="./img/droplet.svg" alt="Red"></button>
+								<button onclick="bblue();" type="button" class="btn btn-outline-primary"><img src="./img/droplet.svg" alt="Blue"></button>
+							</div></center>
+						  </li>
+						
+						<!--
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+
+						-->
+							
+						</ul>
+					  </li>
+
+					</ul>
+
+
+
+
+
+
+
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Footer
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Fleft();" type="button" class="btn btn-outline-secondary"> <img src="./img/align-left.svg" alt="Align Left"> </button>
+								<button onclick="Fcenter();" type="button" class="btn btn-outline-secondary"><img src="./img/align-center.svg" alt="Align Center"></button>
+								<button onclick="Fright();" type="button" class="btn btn-outline-secondary"><img src="./img/align-right.svg" alt="Align Right"></button>
+							  </div></center>
+						  </li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="Fnormal();" type="button" class="btn btn-outline-secondary"> <img src="./img/x.svg" alt="Align Left"> </button>
+								<button onclick="Fitalic();" type="button" class="btn btn-outline-secondary"><img src="./img/italic.svg" alt="Align Center"></button>
+								<button onclick="Fbold();" type="button" class="btn btn-outline-secondary"><img src="./img/bold.svg" alt="Align Right"></button>
+							  </div></center>
+						  <li><hr class="dropdown-divider"></li>
+							
+							<li><a class="dropdown-item pf_m" onclick="Fpf();">La Belle Aurore</span></a></li>
+						  <li><a class="dropdown-item pn_m" onclick="Fpn();">Literata</a></li>
+						  <li><a class="dropdown-item pc_m" onclick="Fpc();">Ubuntu</a></li>
+						  <li><a class="dropdown-item po_m" onclick="Fpo();">Oswald</a></li>
+						  <li><a class="dropdown-item ph_m" onclick="Fph();">Chilanka</a></li>
+						  <li><a class="dropdown-item qs_m" onclick="Fqs();">Quicksand</a></li>
+						  <li><a class="dropdown-item os_m" onclick="Fos();">Open Sans</a></li>
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							  <center>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="fblack();" type="button" class="btn btn-outline-dark"> <img src="./img/droplet.svg" alt="Black"> </button>
+								<button onclick="fgreen();" type="button" class="btn btn-outline-success"><img src="./img/droplet.svg" alt="Green"></button>
+								<button onclick="fred();" type="button" class="btn btn-outline-danger"><img src="./img/droplet.svg" alt="Red"></button>
+								<button onclick="fblue();" type="button" class="btn btn-outline-primary"><img src="./img/droplet.svg" alt="Blue"></button>
+							</div></center>
+						  </li>
+						
+						<!--
+					  <p style="margin-top:2px;">	
+						<input type="text" class="form-control-sm" id="hcustomcolor" value="" placeholder="#000000"><button style="margin-left:5px;" onclick="hcustomcolor();" class="btn btn-outline-dark">Set Color</button>
+					</p>
+
+						-->
+							
+						</ul>
+					  </li>
+
+					</ul>
+
+
+
+
+
+
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Advanced
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li>
+								<center><input type="text" class="form-control-sm" id="customcolor" value="" placeholder="#000000">
+							</li>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="hcustomcolor();" type="button" class="btn btn-outline-secondary"> Header </button>
+								<button onclick="bcustomcolor();" type="button" class="btn btn-outline-secondary">Body</button>
+								<button onclick="fcustomcolor();" type="button" class="btn btn-outline-secondary">Footer</button></center>
+							  </div>
+						  </li>
+
+						  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center style="padding-top: 10px;"><input type="text" class="form-control-sm" id="custommargin" value="" placeholder='Margin in "px", "mm", or "in"'></center>
+						</li>
+						<li>
+						
+							<center style="padding-top: 10px;"><div class="btn-group" role="group" aria-label="Basic example">
+								<button onclick="setmargint();" type="button" class="btn btn-outline-secondary"> <img src="./img/arrow-up.svg" alt=""> </button>
+								<button onclick="setmarginr();" type="button" class="btn btn-outline-secondary"> <img src="./img/arrow-right.svg" alt=""> </button>
+								<button onclick="setmarginb();" type="button" class="btn btn-outline-secondary"> <img src="./img/arrow-down.svg" alt=""> </button>
+								<button onclick="setmarginl();" type="button" class="btn btn-outline-secondary"> <img src="./img/arrow-left.svg" alt=""> </button>
+
+							</div></center></li>
+							<li><hr class="dropdown-divider"></li>
+							<li style="text-align: center;">DANGER: The following cannot be undone.</li>
+							<li>
+								<center style="padding-top: 10px;"><div class="btn-group" role="group" aria-label="Basic example">
+									<button onclick="resetstyles();" type="button" class="btn btn-outline-danger">Reset Styles <img src="./img/trash-2.svg" alt=""> </button>
+
+								</div></center></li>
+							
+							<li>
+								<center style="padding-top: 10px;"><div class="btn-group" role="group" aria-label="Basic example">
+									<button onclick="cleardocument();" type="button" class="btn btn-outline-danger">Delete Document <img src="./img/trash-2.svg" alt=""> </button>
+
+								</div></center></li>	
+							
+							
+							</li>
+						<!--  <li><hr class="dropdown-divider"></li>
+						  <li>
+							<center style="padding-top: 10px;"><input type="text" class="form-control-sm" id="customfont" value="" placeholder="#000000">
+						</li>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button onclick="hcustomfont();" type="button" class="btn btn-outline-secondary"> Header </button>
+							<button onclick="bcustomfont();" type="button" class="btn btn-outline-secondary">Body</button>
+							<button onclick="fcustomfont();" type="button" class="btn btn-outline-secondary">Footer</button></center>
+						  </div>
+					  </li>-->
+
+
+
+
+						 
+						
+						<!--
+					  <p style="margin-top:2px;">	
+
+					</p>
+
+						-->
+							
+						</ul>
+					  </li>
+					<!--  <li class="nav-link" >
+						<input type="text" class="form-control-sm" id="documentname" value="" placeholder='Document name'>
+					  </li>
+					  <li class="nav-item" >
+						  <a class="nav-link"  href="" onclick="settitle()">Save</a>
+					  </li>-->
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	
+						  <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Font Library
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search fonts...">
+
+								<ul class="list-group" id="myUL">
+
+								  <li class="list-group-item text-end"><div> <p class="pf_s">La Belle Aurore</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hpf();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bpf();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fpf();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item  text-end"><div> <p class="pn_s">Literata</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hpn();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bpn();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fpn();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="pc_s">Ubuntu</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hpc();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bpc();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fpc();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="po_s">Oswald</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hpo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bpo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fpo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="ph_s">Chilanka</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hph();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bph();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fph();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="qs_s">Quicksand</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hqs();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bqs();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fqs();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="os_s">Open Sans</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hos();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bos();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fos();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="mo_s">Roboto Mono</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hmo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bmo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fmo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="ru_s">Rubik</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+									<li class="list-group-item text-end"><div> <p class="ba_s">Barlow</p> 
+								
+									
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button onclick="Hba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+											<button onclick="Bba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+											<button onclick="Fba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+
+										</div></div>
+									</li>
+
+</ul>
+
+
+					</ul>
+					<script>
+						function myFunction() {
+						  // Declare variables
+						  var input, filter, ul, li, a, i, txtValue;
+						  input = document.getElementById('myInput');
+						  filter = input.value.toUpperCase();
+						  ul = document.getElementById("myUL");
+						  li = ul.getElementsByTagName('li');
+						
+						  // Loop through all list items, and hide those who don't match the search query
+						  for (i = 0; i < li.length; i++) {
+							a = li[i].getElementsByTagName("p")[0];
+							txtValue = a.textContent || a.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							  li[i].style.display = "";
+							} else {
+							  li[i].style.display = "none";
+							}
+						  }
+						}
+						</script>
+				  </div>
+
+
+
+
+
+
+
+				  
+				</div>
+			  </nav>
+
+
+<!---->
+			 <!--
+<a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="Free Website Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script>
+-->
+
+
+
+
+		 </div>
+
+	 
+	<script id="script" src="app.js"></script>
+	<script>
+			function widthcontrold(){
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					document.getElementById("savebtn").innerHTML = '';
+
+				} else {
+					document.getElementById("mobileditor1").innerHTML = '';
+					document.getElementById("mobileditor2").innerHTML = '';
+					document.getElementById("mobileditor3").innerHTML = '';
+
+					
+}
+
+
+	}
+
+	</script>
+	<a id="ab" onclick="show2();show3();" style="visibility: hidden;"><img src="./author_a.png" style="width: 40px; position: fixed; right: 10px; bottom: 10px;"></a>
+</body>
+
+<script>
+		if (window.location.href == 'https://author.borgcreative.com/?utm_term=cloud') {
+		document.getElementById("printbtn").innerHTML = '';
+
+	}
+
+	if (window.location.href == 'https://author.borgcreative.com/?utm_term=app') {
+		document.getElementById("savebtn").innerHTML = '';
+		document.getElementById("printbtn").innerHTML = '';
+
+	}
+
+
+</script>
+  </html>

@@ -317,6 +317,18 @@ function Bba(){
 function Fba(){
    document.getElementById("footer").className = "ba_m";
 }
+
+
+
+function Hun(){
+   document.getElementById("heading").className = "un_l";
+}
+function Bun(){
+   document.getElementById("body").className = "un_m";
+}
+function Fun(){
+   document.getElementById("footer").className = "un_m";
+}
 /*end */
 
 

@@ -329,6 +329,16 @@ function Bun(){
 function Fun(){
    document.getElementById("footer").className = "un_m";
 }
+
+function Hco(){
+   document.getElementById("heading").className = "co_l";
+}
+function Bco(){
+   document.getElementById("body").className = "co_m";
+}
+function Fco(){
+   document.getElementById("footer").className = "co_m";
+}
 /*end */
 
 

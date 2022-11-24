@@ -212,3 +212,18 @@ div:focus {
   font-family: 'Radis Sans', sans-serif;
   font-size: 8mm;
 }
+
+.co_s {
+  font-family: 'Cormorant SC' serif;
+  font-size: 3mm;
+}
+
+.co_m {
+  font-family: 'Cormorant SC', serif;
+  font-size: 5mm;
+}
+
+.co_l {
+  font-family: 'Cormorant SC', serif;
+  font-size: 8mm;
+}

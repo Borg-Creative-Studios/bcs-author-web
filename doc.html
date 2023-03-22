@@ -12,10 +12,6 @@
 		<link rel="stylesheet" href="https://source.jborgarts.com/JazzBlocksLibrary/libraries/everythingelse.css">
 		<link rel="preload" href="https://source.jborgarts.com/JazzBlocksLibrary/JazzBlocksFunctions.js" as="script">
 		
-		
-		<!--
-			<link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
-		-->
 		<!--end-->
 		<!--Font Links-->
 		<link rel="stylesheet" href="https://fonts.borgcreative.com/fonts.css">
@@ -44,7 +40,7 @@
 				<span><img src="./img/edit.svg" alt="Editor menu"></span>
 			</button>
 
-			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
 							<center><div class="btn-group" role="group" aria-label="Basic example">
 								<button onclick="Hleft();" type="button" class="btn btn-outline-secondary"> <img src="./icons/align-left.svg" alt="Align Left"> </button>
 								<button onclick="Hcenter();" type="button" class="btn btn-outline-secondary"><img src="./icons/align-center.svg" alt="Align Center"></button>
@@ -503,11 +499,184 @@
 						  <a class="nav-link"  href="" onclick="settitle()">Save</a>
 					  </li>-->
 					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0" >
 
 
 
 						  <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Font Library
+							</a>
+
+							
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+
+								<table class="table">
+
+									<tbody>
+									  <tr>
+										<td class="pf_s">La Belle Aurore </td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hpf();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bpf();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fpf();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="pn_s">Literata</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hpn();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bpn();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fpn();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+									  </tr>
+									  <tr>
+										<td class="pc_s">Ubuntu </td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hpc();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bpc();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fpc();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="po_s">Oswald</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hpo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bpo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fpo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+									  </tr>
+									  <tr>
+										<td class="ph_s">Chilanka</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hph();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bph();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fph();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="qs_s">Quicksand</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hqs();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bqs();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fqs();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+
+
+										
+									  </tr>
+
+									  <tr>
+										<td class="os_s">Open Sans</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hos();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bos();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fos();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="mo_s">Roboto Mono</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hmo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bmo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fmo();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td class="ru_s">Rubik</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="ba_s">Barlow</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td class="ru_s">Rubik</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fru();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="ba_s">Barlow</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fba();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+									  </tr>
+
+									  <tr>
+										<td class="od_s">Open Dyslexic</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hod();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bod();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fod();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+										<td class="ng_s">Nanum Gothic</td>
+										<td>
+											<div class="btn-group" role="group" aria-label="Basic example">
+												<button onclick="Hng();" type="button" class="btn btn-outline-secondary btn-sm qs_s">H</button>
+												<button onclick="Bng();" type="button" class="btn btn-outline-secondary btn-sm qs_s">B</button>
+												<button onclick="Fng();" type="button" class="btn btn-outline-secondary btn-sm qs_s">F</button>
+	
+											</div>
+										</td>
+									  </tr>
+									</tbody>
+								  </table>
+
+
+
+					</ul>
+
+				  </div>
+
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+
+
+
+					<!--	  <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Font Library
 							</a>
@@ -655,7 +824,7 @@
 </ul>
 
 
-					</ul>
+					</ul>-->
 					<script>
 						function myFunction() {
 						  // Declare variables

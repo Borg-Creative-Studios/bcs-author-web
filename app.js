@@ -318,6 +318,26 @@ function Fba(){
    document.getElementById("footer").className = "ba_m";
 }
 
+function Hod(){
+   document.getElementById("heading").className = "od_l";
+}
+function Bod(){
+   document.getElementById("body").className = "od_m";
+}
+function Fod(){
+   document.getElementById("footer").className = "od_m";
+}
+
+function Hng(){
+   document.getElementById("heading").className = "ng_l";
+}
+function Bng(){
+   document.getElementById("body").className = "ng_m";
+}
+function Fng(){
+   document.getElementById("footer").className = "ng_m";
+}
+
 
 
 function Hun(){

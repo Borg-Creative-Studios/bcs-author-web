@@ -133,97 +133,129 @@ div:focus {
 
 .qs_l {
   font-family: 'Quicksand', sans-serif;
-  font-size: 8mm;
+  font-size: 18pt;
 }
 .qs_m {
   font-family: 'Quicksand', sans-serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 .qs_s {
   font-family: 'Quicksand', sans-serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 .os_l {
   font-family: 'Open Sans', sans-serif;
-  font-size: 8mm;
+  font-size: 18pt;
 }
 .os_m {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 .os_s {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 
 .mo_l {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 8mm;
+  font-size: 18pt;
 }
 .mo_m {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 .mo_s {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 .ru_l {
   font-family: 'Rubik', sans-serif;
-  font-size: 8mm;
+  font-size: 18pt;
 }
 .ru_m {
   font-family: 'Rubik', sans-serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 .ru_s {
   font-family: 'Rubik', sans-serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 .ba_l {
   font-family: 'Barlow', sans-serif;
-  font-size: 8mm;
+  font-size: 18pt;
 }
 .ba_m {
   font-family: 'Barlow', sans-serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 .ba_s {
   font-family: 'Barlow', sans-serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 
 .un_s {
   font-family: 'Radis Sans', sans-serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 .un_m {
   font-family: 'Radis Sans', sans-serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 
 .un_l {
   font-family: 'Radis Sans', sans-serif;
-  font-size: 8mm;
+  font-size: 18pt;
 }
 
 .co_s {
   font-family: 'Cormorant SC' serif;
-  font-size: 3mm;
+  font-size: 8pt;
 }
 
 .co_m {
   font-family: 'Cormorant SC', serif;
-  font-size: 5mm;
+  font-size: 12pt;
 }
 
 .co_l {
   font-family: 'Cormorant SC', serif;
-  font-size: 8mm;
+  font-size: 18pt;
+}
+
+.od_l{
+  font-family: "OpenDyslexic Regular"; 
+  font-size: 18pt;
+}
+
+.od_m{
+  font-family: "OpenDyslexic Regular"; 
+  font-size: 12pt;
+}
+
+.od_s{
+  font-family: "OpenDyslexic Regular"; 
+  font-size: 8pt;
+}
+
+
+
+.ng_l{
+  font-family: "Nanum Gothic"; 
+  font-size: 18pt;
+}
+
+.ng_m{
+  font-family: "Nanum Gothic"; 
+  font-size: 12pt;
+}
+
+.ng_s{
+  font-family: "Nanum Gothic"; 
+  font-size: 8pt;
 }

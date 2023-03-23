@@ -20,6 +20,14 @@ document.getElementById("body").style.color =
 document.getElementById("footer").style.color =
         localStorage["footerc"] || "#000"; // default text
     
+        document.getElementById("heading").style.fontSize =
+        localStorage["titlefs"] || "18pt"; // default text
+  document.getElementById("body").style.fontSize =
+        localStorage["textfs"] || "12pt"; // default text
+  document.getElementById("footer").style.fontSize =
+          localStorage["footerfs"] || "12pt"; // default text
+      
+
 
         document.getElementById("heading").style.fontWeight =
         localStorage["titlefw"] || "normal"; // default text
@@ -69,6 +77,11 @@ setInterval(function() {
   localStorage["titlec"] = document.getElementById("heading").style.color + ' '; // heading div
   localStorage["textc"] = document.getElementById("body").style.color + ' '; // content div
   localStorage["footerc"] = document.getElementById("footer").style.color + ' '; // content div
+
+  localStorage["titlefs"] = document.getElementById("heading").style.fontSize + ' '; // heading div
+  localStorage["textfs"] = document.getElementById("body").style.fontSize + ' '; // content div
+  localStorage["footerfs"] = document.getElementById("footer").style.fontSize + ' '; // content div
+
 
   localStorage["titlefw"] = document.getElementById("heading").style.fontWeight + ' '; // heading div
   localStorage["textfw"] = document.getElementById("body").style.fontWeight + ' '; // content div
@@ -478,6 +491,27 @@ function bcustomcolor(){
 
    document.getElementById("body").style.color = document.getElementById("customcolor").value;
 }
+
+
+function hcustomsize(){
+
+
+   document.getElementById("heading").style.fontSize = document.getElementById("customsize").value;
+}
+
+function bcustomsize(){
+
+
+   document.getElementById("body").style.fontSize = document.getElementById("customsize").value;
+}
+
+function fcustomsize(){
+
+
+   document.getElementById("footer").style.fontSize = document.getElementById("customsize").value;
+}
+
+
 
 
 function hcustomfont(){
